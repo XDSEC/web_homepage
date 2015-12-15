@@ -1,0 +1,185 @@
+::selection {
+background:red;
+color:#eee;
+}
+::-moz-selection {
+background:red;
+color:#eee;
+}
+::-webkit-selection {
+background:red;
+color:#eee;
+}
+.class-timeline {
+	height: 700px;
+}
+.class-footer {
+	height: 200px;
+	background-color: #F3ACAC;
+	padding-top: 50px;
+	font-size: 16px;
+	cursor: default;
+	transition: background 0.5s;
+	-moz-transition: background 0.5s;	/* Firefox 4 */
+	-webkit-transition: background 0.5s;	/* Safari 和 Chrome */
+	-o-transition: background 0.5s;	/* Opera */
+}
+.class-footer:hover {
+	background-color: #E27878;
+}
+.class-footer:hover a{
+	text-decoration: none;
+	cursor: pointer;
+}
+.class-footer a{
+	color: #333;
+	border-bottom: 1px dashed #333;
+}
+.class-footer a:hover {
+	color: red;
+}
+#nav {
+	position:relative;
+	top:0;
+	width: 100%;
+}
+#id-header {
+	height: 630px;
+	background-color: #242424;
+}
+.back-logo {
+	height: 630px;
+	background-image: url(../img/bg.png);
+	background-position: center;
+	background-repeat: repeat-y;
+}
+#id-logo {
+	padding-top: 100px;
+	display: none;
+}
+.header-xdintro {
+	display: none;
+
+	color: #EEE;
+}
+blockquote p {
+	font-size: 15px;
+}
+.header-xdbq {
+	margin-top: 20px;
+	margin-left: 30%;
+	margin-right: 25%;
+}
+.nav-xdmenu {
+
+}
+.nav-xdmenu li:hover {
+	background-color: #080808;
+}
+.navblock {
+	height: 50px;
+}
+#member {
+	height: 600px;
+	background-color: #F2F2F2;
+
+}
+.memone {
+	height: 30px;
+	width: 100px;
+	background-color: #E9C8C8;
+	line-height: 30px;
+	font-size: 16px;
+	padding: 0 7px;
+	margin: 0 1px 1px 80px;
+	cursor: pointer;
+	z-index: 500;
+	transition: background 0.2s;
+	-moz-transition: background 0.2s;	/* Firefox 4 */
+	-webkit-transition: background 0.2s;	/* Safari 和 Chrome */
+	-o-transition: background 0.2s;	/* Opera */
+}
+.memone:hover {
+	background-color: #E68E8E;
+}
+.memone .meminfo {
+	line-height: 16px;
+	font-size: 13px;
+	display: none;
+	position: relative;
+	left: -10px;
+	width: 200px;
+	background-color: #fff;
+}
+/*.memone.onleft .meminfo {
+	left: -105px;
+}
+.memone.onright .meminfo {
+	right: -103px;
+}*/
+.infolist .list-group-item {
+	padding: 5px 0px;
+	background-color: #f2f2f2;
+	cursor: pointer;
+	transition: background 0.4s;
+	-moz-transition: background 0.4s;	/* Firefox 4 */
+	-webkit-transition: background 0.4s;	/* Safari 和 Chrome */
+	-o-transition: background 0.4s;	/* Opera */
+}
+.infolist a {
+	text-decoration: none;
+	color: #111;
+}
+.infolist .list-group-item:hover {
+	background-color: #fff;
+/*	position: relative;
+	top: -2px;
+	left: -2px;
+	height: 32px;
+	width: 202px;
+	border: 1px solid #ddd;*/
+}
+#totop{
+	z-index: 1001;
+	display:none;
+	position:fixed;
+	bottom:80px;
+	width:40px;
+	line-height:40px;
+	background:#CCC;
+	color:#FFF;
+	text-align:center;
+	cursor:pointer;
+	transition: background 0.5s;
+	-moz-transition: background 0.5s;	/* Firefox 4 */
+	-webkit-transition: background 0.5s;	/* Safari 和 Chrome */
+	-o-transition: background 0.5s;	/* Opera */
+}
+#totop:hover{
+	background:#2cb4bf
+}
+.a-timeline {
+	position: relative;
+	top: -20px;
+}
+.a-member {
+	position: relative;
+	top: -50px;
+}
+#onload {
+	display: block;
+	background-color: #000;
+	width: 100%;
+	height: 5000px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	color: #fff;
+	padding-top: 300px;
+	font-size: 20px;
+}
+.topdiv {
+	margin-top: 10px;
+}
