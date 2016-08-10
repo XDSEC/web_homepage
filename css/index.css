@@ -1,0 +1,174 @@
+@font-face
+{
+	font-family: Myriad;
+	src:url("../fonts/MyriadSetPro-ExtraThin.otf");
+}
+.screen
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+.alphabet_background
+{
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	position: absolute;
+	height: 100%;
+	width: 20%;
+	top:0%;
+	background-color: black;
+	opacity: 0.4;
+	z-index: 1;
+}
+.alphabet_font
+{
+	position:absolute;
+	left:45%;
+	top:50%;
+	display:block;
+	transform:scale(10,11);
+}
+.alphabet_font a
+{
+	color:white;
+	text-decoration:none;
+}
+.alphabet_font a:link
+{
+	color:white;
+}
+.alphabet_font a:visited
+{
+	color:white;
+}
+.alphabet_font a:hover
+{
+	color:white;
+}
+.alphabet_font a:active
+{
+	color:white;
+}
+.alphabet_font a:focus
+{
+	color:white;
+}
+.guide	
+{
+	position: absolute;
+	bottom: 0%;
+	background-color: white;
+	height: 0%;
+	width: 20%;
+	opacity: 0;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+}
+.show
+{
+	height: 100%;
+	width: 20%;
+	border: none;
+}
+.show:hover .alphabet_background
+{
+	height: 80%;
+}
+.show:hover .guide
+{
+	height: 20%;
+	opacity: 0.4;
+}
+.guide a
+{
+	color:black;
+	text-decoration:none;
+}
+.guide a:link
+{
+	color:black;
+}
+.guide a:visited
+{
+	color:black;
+}
+.guide a:hover
+{
+	color:black;
+}
+.guide a:active
+{
+	color:black;
+}
+.guide a:focus
+{
+	color:black;
+} 
+.list_guide
+{
+	position: fixed;
+	right: 5%;
+	bottom: 12%;
+	width: 50px;
+	height: 50px;
+	-webkit-transition:0.2s;
+	border-radius: 25px;
+	cursor: pointer;
+	z-index: -1;
+	background-color:black;
+}
+.list_guide:hover
+{
+	transform: rotate(360deg);
+}
+.list_guide_alphabet
+{
+	font-family: Myriad;
+	color:white;
+	text-align:center;
+	font-size:300%;
+	margin:0px;
+}
+.xdsec_information_title
+{
+	position:absolute;
+	top:10%;
+	left: 0%;
+	background-color:black;
+	width:50%;
+	height:20%;
+	z-index: 3;
+}
+.xdsec_information_content
+{
+	position:absolute;
+	width:60%;
+	height:50%;
+	left:0%;
+	top:35%;
+	background-color:black;
+	opacity: 1;
+	z-index: 2;
+}
+.xdsec_history_icon
+{
+	position:absolute;
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	background-color:black;
+	z-index: 2;
+	border-bottom: 3px solid black
+}
+.xdsec_history_line
+{
+	position:absolute;
+	height:100px;
+	width:0%;
+	border-top-left-radius:50px;
+	border-bottom-left-radius:50px;
+	background-color:white;
+	overflow:hidden;
+	border-bottom: 3px solid black;
+}
