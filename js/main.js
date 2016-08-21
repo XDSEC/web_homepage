@@ -22,11 +22,11 @@ function changePos(id,height){
 $(document).ready(function(){
     setTimeout(function(){
         $("#id-logo").fadeIn(5000);
-       /* $("#id-logo").animate({
+        $("#id-logo").animate({
             "padding-top": "0"
         }, function(){
             $(".header-xdintro").slideDown('slow');
-        });*/
+        });
     }, 1000);
     $(".memone").hover(function(e){
         var node = $(e.target.childNodes[1]);
