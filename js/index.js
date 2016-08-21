@@ -94,14 +94,14 @@ function xdsec_information_title_move()
 {
 	if(parseInt($(window).scrollTop()) <= parseInt($('.xdsec_information_title').position().top)+parseInt($(window).height())+parseInt($('.xdsec_information_title').css('height')))
 		{
-			//$('.xdsec_information_title').css('left',$(window).width()*0.25*($(window).scrollTop()/$(window).height())+'px');
+			$('.xdsec_information_title').css('left',$(window).width()*0.25*($(window).scrollTop()/$(window).height())+'px');
 		}
 }
 function xdsec_information_content_show()
 {
 	if(parseInt($(window).scrollTop()) <= parseInt($('.xdsec_information_content').position().top)+parseInt($(window).height())+parseInt($('.xdsec_information_content').css('height')))
 	{
-		//$('.xdsec_information_content').css('left',$(window).width()*0.20*($(window).scrollTop()/$(window).height())+'px');
+		$('.xdsec_information_content').css('left',$(window).width()*0.20*($(window).scrollTop()/$(window).height())+'px');
 	}
 }
 function xdsec_history_line_show(num)
@@ -187,15 +187,32 @@ function screen_lock(difficult)
 }
 function members()
 {
-	var left =($(window).width()-1000)/2;
-	var top =($(window).height()-400)/2;
+	var left =($(window).width()-1200)/2;
+	var top =($(window).height()-480)/2;
 	$('#member_background').css({
 		'position':'absolute',
 		'left':left,
 		'top':top,
-		'height':'400px',
-		'width':'1000px',
+		'height':'480px',
+		'width':'1200px',
 	});
+}
+function group_icon()
+{
+	var left=$(window).width()*0.02;
+	for(var i=1;i<=6;i++)
+	{
+		$('#group_icon_'+i).css({
+			'position':'absolute',
+			'top':$(window).height()*0.05+'px',
+			'left':($(window).width()*0.03)+'px',
+			'width':$(window).width()*0.1+'px',
+			'height':$(window).width()*0.1+'px',
+			'border-radius':$(window).width()*0.1*0.5+'px',
+			'background-color':'black',
+			'z-index':'5',
+		});
+	}
 }
 var now_position;
 var scroll;
@@ -204,7 +221,8 @@ var jmp_flag = 0;
 var list_guide_flag = 0;
 $(document).ready(function ()
 {
-	members()
+	members();
+	group_icon();
 	var e = new sHover("head","info");
 	e.set({
 	speed:7,

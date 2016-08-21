@@ -1,7 +1,3 @@
-body{
-font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
-}
-
 @font-face
 {
 	font-family: Myriad;
@@ -141,23 +137,24 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	position:absolute;
 	top:10%;
 	left: 0%;
-	background-color:#0daca8;
-	width:33%;
-	height:19%;
-	margin-left:2%
+	background-color:black;
+	width:50%;
+	height:20%;
 	z-index: 3;
+	font-family:"SegeoUI";
 }
 .xdsec_information_content
 {
 	position:absolute;
-	width:40%;
+	width:60%;
 	height:50%;
 	left:0%;
 	top:35%;
+	background-color:black;
 	opacity: 1;
 	z-index: 2;
 	overflow:auto;
-	margin-left:2%;
+	font-family:"SegeoUI";
 }
 .xdsec_information_content h2::first-letter
 {
@@ -186,8 +183,8 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 }
 .head
 {
-	width:90px;
-	height:90px;
+	width:110px;
+	height:110px;
 	background:powderblue;
 	margin: 5px;
 	float: left;
@@ -199,14 +196,6 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 .group
 {
 	position:absolute;
-	bottom:10%;
-	width:10%;
-	height:70%;
-	background:black;
-	-webkit-transition:1s;
-}
-.group:hover
-{
-	bottom: 5%;
-	height: 80%;
+	width:16%;
+	height:100%;
 }
