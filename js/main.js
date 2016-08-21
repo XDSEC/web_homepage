@@ -21,7 +21,7 @@ function changePos(id,height){
 }
 $(document).ready(function(){
     setTimeout(function(){
-        $("#id-logo").fadeIn(5000);
+        $("#id-logo").fadeIn(1000);
         $("#id-logo").animate({
             "padding-top": "0"
         }, function(){
