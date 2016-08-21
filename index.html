@@ -7,11 +7,40 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script type="text/javascript" src="js/sHover.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.slides.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+
+	<script type="text/javascript">
+		var t = n =0, count;
+		$(document).ready(function(){ 
+		count=$("#banner_list a").length;
+		$("#banner_list a:not(:first-child)").hide();
+		$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+		$("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+		$("#banner li").click(function() {
+		var i = $(this).text() -1;//获取Li元素内的值，即1，2，3，4
+		n = i;
+		if (i >= count) return;
+		$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+		$("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
+		$("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+		document.getElementById("banner").style.background="";
+		$(this).toggleClass("on");
+		$(this).siblings().removeAttr("class");
+		});
+		t = setInterval("showAuto()", 4000);
+		$("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+		})
+
+		function showAuto()
+		{
+		n = n >=(count -1) ?0 : ++n;
+		$("#banner li").eq(n).trigger('click');
+		}
+	</script>
 
 </head>
 <body style="margin:0px;">
-<!-- <div style="position:fixed;bottom:5%;left:3%;width:30%;height:10%;background:black;z-index:6" id="debug"><h3 style="color:white"></ h3></div> -->
  <div class="screen" style="background-size:100%;background: url('img/1.jpg') no-repeat;">
  	<span class="show">
  		<span class="guide">
@@ -82,11 +111,28 @@
 	<span class="xdsec_information_title">
 		<h1 style="text-align:center;font-size:300%;color:white;">西电信息安全协会</h1>
 	</span>
-	<!-- <span style="position:absolute;top:42%;height:3%;width:100%;background-color:black;"></span> -->
 	<span class="xdsec_information_content">
 		<h2 style="padding:2%;text-align:left;">西安电子科技大学信息安全协会（XDSEC）是于2009年成立的学生团体，致力于在学生群体中进行信息安全相关技术的普及和交流。成立七年来，在学校有关部门、老师的大力支持，以及各届成员的努力下，信安协会现已成长为一个在安全方向具有一定技术实力的学生组织。协会于2010年在校方支持下，主办了第一届网络安全攻防大赛（即XDCTF），并延续至今。</h2>
 	</span>
+	<div style="position:absolute;left:45%;height:100%;width:55%;background:white;padding-top:4%;">
+	<div id="banner">
+	<ul>
+	<li class="on">1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	</ul>
+	<div id="banner_list"> 
+	<a href="#" target="_blank"><img src="img/alibaba.jpg" title="jquery插件库1" alt="jquery插件库1"/></a> 
+	<a href="#" target="_blank"><img src="img/l.jpg" title="jquery插件库2" alt="jquery插件库2"/></a> 
+	<a href="#" target="_blank"><img src="img/share.jpg" title="jquery插件库3" alt="jquery插件库3"/></a> 
+	<a href="#" target="_blank"><img src="img/huashanbei.jpg" title="jquery插件库4" alt="jquery插件库4"/></a> 
+	</div>
+	</div>
+	</div>
 </div>
+
+
 <div class="screen" style="top:200%;background-size:100%;background: white no-repeat;">
 	<span style="position:absolute;left:18%;height:60%;width:2px;top:25%;background:black;z-index:5;"></span>
 	<span style="position:absolute;left:34%;height:60%;width:2px;top:25%;background:black;z-index:5;"></span>
@@ -270,10 +316,10 @@
 </div>
 <div class="screen" style="top: 500%;background:yellow;" id="fifthscreen"></div>
 <div class="screen" style="top:600%;background:white" id="sixthscreen">
-	<span id="enroll_1"></span>
-	<span id="enroll_2"></span>
-	<span id="enroll_3"></span>
-	<span id="enroll_4"></span>
+	<span id="collections_1"></span>
+	<span id="collections_2"></span>
+	<span id="collections_3"></span>
+	<span id="collections_4"></span>
 	<span style="position:absolute;bottom:0%;width:100%;height:20%;background:white;border-top:2px solid black;"></span>
 </div>
 

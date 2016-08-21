@@ -219,7 +219,7 @@ function enroll()
 	var left = ($(window).width()-1000)/2;
 	for(var i =1;i<=4;i++)
 	{
-		$('#enroll_'+i).css({
+		$('#collections_'+i).css({
 			'position':'absolute',
 			'height':'200px',
 			'width':'200px',
