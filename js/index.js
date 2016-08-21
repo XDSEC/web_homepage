@@ -199,16 +199,16 @@ function members()
 }
 function group_icon()
 {
-	var left=$(window).width()*0.02;
+	var left=($(window).width()*0.16-100)/2;
 	for(var i=1;i<=6;i++)
 	{
 		$('#group_icon_'+i).css({
 			'position':'absolute',
 			'top':$(window).height()*0.05+'px',
-			'left':($(window).width()*0.03)+'px',
-			'width':$(window).width()*0.1+'px',
-			'height':$(window).width()*0.1+'px',
-			'border-radius':$(window).width()*0.1*0.5+'px',
+			'left':left+'px',
+			'width':'100px',
+			'height':'100px',
+			'border-radius':'50px',
 			'background-color':'black',
 			'z-index':'5',
 		});
