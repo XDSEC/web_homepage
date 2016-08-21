@@ -185,6 +185,18 @@ function screen_lock(difficult)
 	}
 
 }
+function members()
+{
+	var left =($(window).width()-1000)/2;
+	var top =($(window).height()-400)/2;
+	$('#member_background').css({
+		'position':'absolute',
+		'left':left,
+		'top':top,
+		'height':'400px',
+		'width':'1000px',
+	});
+}
 var now_position;
 var scroll;
 var last_position;
@@ -192,12 +204,12 @@ var jmp_flag = 0;
 var list_guide_flag = 0;
 $(document).ready(function ()
 {
-	$('.member_background').css({
-		'position':'absolute',
-		'left':($(window).width()-900)/2 + 'px',
-		'height':'450px',
-		'width':'900px',
-		'bottom':'0px'
+	members()
+	var e = new sHover("head","info");
+	e.set({
+	speed:7,
+	opacity:100,						
+	opacityChange:false
 	});
 	now_position = $(window).scrollTop();
 	scroll = 0;

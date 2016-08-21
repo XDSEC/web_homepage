@@ -5,8 +5,8 @@
 }
 @font-face
 {
-	font-family: "Microsoft YaHei";
-	src:url("../fonts/msyh.ttf");
+	font-family: "SegeoUI";
+	src:url("../fonts/segoeuil.ttf");
 }
 .screen
 {
@@ -141,6 +141,7 @@
 	width:50%;
 	height:20%;
 	z-index: 3;
+	font-family:"SegeoUI";
 }
 .xdsec_information_content
 {
@@ -153,7 +154,7 @@
 	opacity: 1;
 	z-index: 2;
 	overflow:auto;
-	font-family:"test";
+	font-family:"SegeoUI";
 }
 .xdsec_information_content h2::first-letter
 {
@@ -180,27 +181,29 @@
 	overflow:hidden;
 	border-bottom: 3px solid black;
 }
-#tagcloud a
+.head
 {
-	resize: none;
-	border: none;
-	outline: none;
-	text-decoration: none;
-	padding: 0px;
-	margin: 0px;
-	list-style-type: none;
-	color: red;
-	font-family: "Microsoft YaHei";
+	width:90px;
+	height:90px;
+	background:powderblue;
+	margin: 5px;
+	float: left;
 }
-
-#Album li,#Album{list-style:none;}
-#Album{ position:relative;background:url(../images/loader.gif) no-repeat center;height:203px;}
-#Album li{float:left;margin:1px 1px 0px 0px;display:inline;}
-#Album li img{width:100px;height:100px;}
-#Album li strong{display:block;color:#FFFFFF;font-size:24px;line-height:16px;padding:0px 10px;margin-top:8px;white-space:nowrap;}
-#Album li span{display:block;color:#FFFFFF;font-size:24px;line-height:16px;padding:0px 10px;margin-top:5px;white-space:nowrap;}
-#Album li a{position:absolute;z-index:100;visibility:hidden;}
-#Album li a em{ width:100%;position:absolute;top:0px;left:0px;display:none;opacity:0.5;filter:alpha(opacity=50);background:#000000;}
-#Album img{border:0px;border:none;}
-#Album .Album_info{display:none;position:absolute;background:#4bae41;z-index:101;-moz-box-shadow:0 0 10px #000000;-webkit-box-shadow:0 0 10px #000000;box-shadow:0 0 10px #000000;}
-#Album .Album_info i{font-size:24px;margin-right:5px;font-style:normal;font-weight:normal;}
+.info
+{
+	background:firebrick;
+}
+.group
+{
+	position:absolute;
+	bottom:10%;
+	width:10%;
+	height:70%;
+	background:black;
+	-webkit-transition:1s;
+}
+.group:hover
+{
+	bottom: 5%;
+	height: 80%;
+}
