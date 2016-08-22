@@ -161,7 +161,7 @@ function members()
 }
 function group_icon()
 {
-	var left=($(window).width()*0.16-100)/2;
+	var left=($('.group').width()-100)/2;
 	for(var i=1;i<=6;i++)
 	{
 		$('#group_icon_'+i).css({
