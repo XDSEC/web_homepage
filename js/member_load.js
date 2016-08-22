@@ -40,6 +40,7 @@ members_list=[
 {imgname:"U.jpg", type:"SPECIAL"},
 ];
 domtempalte=$("#t_member")[0].innerHTML;
+t_noblog=$("#t_member_noblog")[0].innerHTML;
 blankspace=$("#t_blank")[0].innerHTML;
 fragment='';
 len=members_list.length;
@@ -48,6 +49,12 @@ for (; i<len; i++){
 	if (members_list[i].type==="SPECIAL"){
 		fragment += blankspace.replace(/\{seq\}/, i )
 					.replace(/\{imgname\}/, members_list[i].imgname )
+	}else if (members_list[i].blog===""){
+	fragment += t_noblog
+		.replace(/\{seq\}/, i )
+		.replace(/\{name\}/, members_list[i].name )
+		.replace(/\{imgname\}/, members_list[i].imgname )
+		.replace(/\{intro\}/, members_list[i].intro )
 	}else{
 	fragment += domtempalte
 		.replace(/\{seq\}/, i )
