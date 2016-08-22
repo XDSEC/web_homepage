@@ -142,14 +142,14 @@ function screen_lock(difficult)
 }
 function members()
 {
-	var left =($(window).width()-1100)/2;
-	var top =($(window).height()-440)/2;
+	var left =($(window).width()-1300)/2;
+	var top =($(window).height()-520)/2;
 	$('#member_background').css({
 		'position':'absolute',
 		'left':left,
 		'top':top,
-		'height':'440px',
-		'width':'1100px',
+		'height':'520px',
+		'width':'1300px',
 		'margin':'0px',
 	});
 

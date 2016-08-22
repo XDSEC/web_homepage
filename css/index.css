@@ -160,8 +160,8 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 /*协会成员CSS*/
 .head
 {
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	margin: 5px;
 	float: left;
 	background-size:cover !important;
@@ -182,7 +182,7 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	text-align:center;
 	margin:5px;
 	margin-top:3px;
-	font-size:10px;
+	font-size:13px;
 }
 .group
 {
@@ -203,9 +203,9 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 {
 	position:absolute;
 	background:firebrick;
-	left:35px;
+	left:30px;
 	bottom:10px;
-	width:40px;
+	width:60px;
 	height:20px;
 	border:none;
 	border-radius:4px;
