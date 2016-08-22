@@ -11,13 +11,13 @@ members_list=[
 {imgname:"chuhades.jpg",name:"Chu", intro:"Talk is cheap<br>show me the shell.", blog:"http://sh3ll.me", blogname:"Chu's Blog"},
 {imgname:"izy.jpg",name:"Izy", intro:"", blog:"http://1zy.pw", blogname:"Izy's Blog"},
 {imgname:"netfairy.jpg",name:"NetFairy", intro:"关注网络安全技术", blog:"http://www.netfairy.net", blogname:"Netfairy's Blog"},
-{name:"BLANK", type:"SPECIAL"},
-{name:"BLANK", type:"SPECIAL"},
-{name:"BLANK", type:"SPECIAL"},
-{name:"BLANK", type:"SPECIAL"},
-{name:"BLANK", type:"SPECIAL"},
-{name:"BLANK", type:"SPECIAL"},
-{name:"BLANK", type:"SPECIAL"},
+{imgname:"M.jpg", type:"SPECIAL"},
+{imgname:"E.jpg", type:"SPECIAL"},
+{imgname:"M.jpg", type:"SPECIAL"},
+{imgname:"B.jpg", type:"SPECIAL"},
+{imgname:"E.jpg", type:"SPECIAL"},
+{imgname:"R.jpg", type:"SPECIAL"},
+{imgname:"S.jpg", type:"SPECIAL"},
 {imgname:"th1nk.jpg",name:"Th1nk", intro:"", blog:"", blogname:"Blog"}, {imgname:"ashitaka.jpg",name:"Ashitaka", intro:"祖传IDA，专治F5", blog:"", blogname:"Blog"},
 {imgname:"larryxi.jpg",name:"Larry", intro:"Nothing but gold can stay", blog:"", blogname:"Blog"},
 {imgname:"damnull.jpg",name:"damNull", intro:"开发一枚", blog:"", blogname:"Blog"},
@@ -37,7 +37,7 @@ members_list=[
 {imgname:"halo.jpg",name:"Halo", intro:"我爱学习", blog:"http://firmianay.github.io/", blogname:"Blog"},
 {imgname:"liuil.jpg",name:"liuil", intro:"Stay hungry, stay foolish.", blog:"https://liuil.top", blogname:"Blog"},
 {imgname:"jianwutianxia.jpg",name:"剑舞天下", intro:"希望成为一个专注于硬件的软件工程师", blog:"http://wsdlhlc.blog.163.com/", blogname:"Blog"},
-{name:"BLANK", type:"SPECIAL"},
+{imgname:"U.jpg", type:"SPECIAL"},
 ];
 domtempalte=$("#t_member")[0].innerHTML;
 blankspace=$("#t_blank")[0].innerHTML;
@@ -47,6 +47,7 @@ i=0;
 for (; i<len; i++){
 	if (members_list[i].type==="SPECIAL"){
 		fragment += blankspace.replace(/\{seq\}/, i )
+					.replace(/\{imgname\}/, members_list[i].imgname )
 	}else{
 	fragment += domtempalte
 		.replace(/\{seq\}/, i )
