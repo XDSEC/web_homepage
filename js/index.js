@@ -171,7 +171,7 @@ function group_icon()
 			'width':'100px',
 			'height':'100px',
 			'border-radius':'50px',
-			'background-color':'black',
+			'background-size':'100%',
 			'z-index':'5',
 		});
 	}

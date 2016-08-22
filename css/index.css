@@ -136,7 +136,7 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	top:25%;
 	background:black;z-index:5;
 }
-/*导航按钮*/
+/*导航按钮CSS*/
 .list_guide
 {
 	position: fixed;
