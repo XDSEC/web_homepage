@@ -166,6 +166,13 @@
 <div class="screen" style="top: 400%;background:url('img/members.jpg');background-size:cover;" id="forthscreen">
 <div id="member_background" class="member_list">
 </div>
+<script type="template" id="t_member_noblog">
+	<div class="head" id="member_{seq}" style="background:url('img/head/{imgname}');">
+		<span class="info">
+		<h4>{name}</h4>
+		<p>{intro}</p>
+	</span></div>
+</script>
 <script type="template" id="t_member">
 	<div class="head" id="member_{seq}" style="background:url('img/head/{imgname}');">
 		<span class="info">
