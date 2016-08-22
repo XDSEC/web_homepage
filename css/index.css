@@ -160,13 +160,23 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	opacity: 1;
 }
 /*协会成员CSS*/
+#member_background{
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+	max-height:480px;
+	max-width:1000px;
+}
 .head
 {
-	width:110px;
-	height:110px;
+	width:90px;
+	height:100px;
 	margin: 5px;
 	float: left;
-	/*background-size:100%*/
+	background-size:cover !important;
 }
 .info
 {
