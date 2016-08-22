@@ -158,19 +158,9 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	-o-transition:0.2s; /* Opera */
 }
 /*协会成员CSS*/
-#member_background{
-	position:absolute;
-	left:0;
-	top:0;
-	bottom:0;
-	right:0;
-	margin:auto;
-	max-height:480px;
-	max-width:1000px;
-}
 .head
 {
-	width:90px;
+	width:100px;
 	height:100px;
 	margin: 5px;
 	float: left;
@@ -179,6 +169,7 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 .info
 {
 	background:powderblue;
+	margin:0px;
 }
 .info h4
 {
