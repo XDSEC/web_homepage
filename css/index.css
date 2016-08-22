@@ -202,11 +202,11 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 }
 .group h4
 {
-	padding: 5%;
+	padding: 20px;
 }
 .group p 
 {
-	padding:8%;
+	padding:25px;
 }
 .member_button
 {
@@ -240,6 +240,7 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
   width: 100%;
   height: auto;
   display: block;
+  background-size: 100%;
 }
 
 .slide {

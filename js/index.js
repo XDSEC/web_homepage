@@ -144,6 +144,13 @@ function members()
 {
 	var left =($(window).width()-1200)/2;
 	var top =($(window).height()-480)/2;
+	$('#member_background').css({
+		'position':'absolute',
+		'left':left,
+		'top':top,
+		'height':'480px',
+		'width':'1200px',
+	});
 
 	var e = new sHover("head","info");
 	e.set({
@@ -205,6 +212,7 @@ $(document).ready(function ()
 	
 	$(window).scroll(function (){
 		list_guide_show();
+		screen_lock(5);
 	});
 	
 });
