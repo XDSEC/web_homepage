@@ -11,6 +11,8 @@
 	<script type="text/javascript" src="js/index.js"></script>
 
 	<script type="text/javascript">
+
+	/*照片banner我先放这里测试一下*/
 		var t = n =0, count;
 		$(document).ready(function(){ 
 		count=$("#banner_list a").length;
@@ -41,72 +43,74 @@
 
 </head>
 <body style="margin:0px;">
+
+<!-- 首屏导航 -->
  <div class="screen" style="background-size:100%;background: url('img/1.jpg') no-repeat;">
  	<span class="show">
  		<span class="guide">
  			<a href="#">
- 				<p style="text-align:center;padding-top:10%;font-size:100%;">协会简介<br>(Xdsec)</p>
+ 				<p>协会简介<br>(Xdsec)</p>
  			</a>
  		</span>
 		<span class="alphabet_background"> 
 			<span class="alphabet_font" >
-				<a href="#" id="a_X"><p style="font-family: Myriad;text-align:center;margin:0px;">X</p></a>
+				<a href="#" id="a_X"><p>X</p></a>
 			</span>
 		</span>	
  	</span>
  	<span class="show">
  		<span class="guide" style="left:20%;">
  			<a href="#">
- 				<p style="text-align:center;padding-top:10%;font-size:100%;">协会历史<br>(Documentary)</p>
+ 				<p>协会历史<br>(Documentary)</p>
  			</a>
  		</span> 
 		<span class="alphabet_background" style="left:20%;">
 			<span class="alphabet_font">
-				<a href="#" id="a_D"><p style="font-family: Myriad;text-align:center;margin:0px;">D</p></a>
+				<a href="#" id="a_D"><p>D</p></a>
 			</span>
 		</span>
 	</span>
 	<span class="show">
 		<span class="guide" style="left:40%;">
 			<a href="#">
-				<p style="text-align:center;padding-top:10%;font-size:100%;">协会成员<br>(Members)</p>
+				<p>协会成员<br>(Members)</p>
 			</a>
 		</span>
 		<span class="alphabet_background" style="left:40%;">
 			<span class="alphabet_font">
-				<a href="#" id="a_S"><p style="font-family: Myriad;text-align:center;margin:0px;">S</p></a>
+				<a href="#" id="a_S"><p>S</p></a>
 			</span>
 		</span>
 	</span>
 	<span class="show">
 		<span class="guide" style="left:60%;">
 			<a href="#">
-				<p style="text-align:center;padding-top:10%;font-size:100%;">招新入口<br>(Enroll)</p>
+				<p>招新入口<br>(Enroll)</p>
 			</a>
 		</span>
 		<span class="alphabet_background" style="left:60%;">
 			<span class="alphabet_font">
-				<a href="#" id="a_E"><p style="font-family: Myriad;text-align:center;margin:0px;">E</p></a>
+				<a href="#" id="a_E"><p>E</p></a>
 			</span>
 		</span>
 	</span>
 	<span class="show">
 		<span class="guide"  style="left:80%;">
 			<a href="#">
-				<p style="text-align:center;padding-top:10%;font-size:100%">其他入口<br>(Collections)</p>
+				<p>其他入口<br>(Collections)</p>
 			</a>
 		</span>
 		<span class="alphabet_background" style="left:80%">
 			<span class="alphabet_font">
-				<a href="#" id="a_C"><p style="font-family: Myriad;text-align:center;margin:0px;">C</p></a>
+				<a href="#" id="a_C"><p>C</p></a>
 			</span>
 		</span>
 	</span>
 </div>  
 
 
-
-<div class="screen" style="top: 100%;background-size:100%;background:url('img/bg_intro.png');" id="secondscreen">
+<!--协会介绍-->
+<div class="screen" id="secondscreen">
 	<span style="position:absolute;top:0;height:100%;width:45%;background-color:black;opacity:0.2"></span>
 	<span class="xdsec_information_title">
 		<h1 style="text-align:center;font-size:300%;color:white;">西电信息安全协会</h1>
@@ -114,164 +118,147 @@
 	<span class="xdsec_information_content">
 		<h2 style="padding:2%;text-align:left;">西安电子科技大学信息安全协会（XDSEC）是于2009年成立的学生团体，致力于在学生群体中进行信息安全相关技术的普及和交流。成立七年来，在学校有关部门、老师的大力支持，以及各届成员的努力下，信安协会现已成长为一个在安全方向具有一定技术实力的学生组织。协会于2010年在校方支持下，主办了第一届网络安全攻防大赛（即XDCTF），并延续至今。</h2>
 	</span>
+	<!-- 照片banner待定 -->
 	<div style="position:absolute;left:45%;height:100%;width:55%;background:white;padding-top:4%;">
-	<div id="banner">
-	<ul>
-	<li class="on">1</li>
-	<li>2</li>
-	<li>3</li>
-	<li>4</li>
-	</ul>
-	<div id="banner_list"> 
-	<a href="#" target="_blank"><img src="img/alibaba.jpg" title="jquery插件库1" alt="jquery插件库1"/></a> 
-	<a href="#" target="_blank"><img src="img/l.jpg" title="jquery插件库2" alt="jquery插件库2"/></a> 
-	<a href="#" target="_blank"><img src="img/share.jpg" title="jquery插件库3" alt="jquery插件库3"/></a> 
-	<a href="#" target="_blank"><img src="img/huashanbei.jpg" title="jquery插件库4" alt="jquery插件库4"/></a> 
+		<div id="banner">
+			<ul>
+				<li class="on">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+			<div id="banner_list"> 
+				<a href="#" target="_blank"><img src="img/alibaba.jpg" title="jquery插件库1" alt="jquery插件库1"/></a> 
+				<a href="#" target="_blank"><img src="img/l.jpg" title="jquery插件库2" alt="jquery插件库2"/></a> 
+				<a href="#" target="_blank"><img src="img/share.jpg" title="jquery插件库3" alt="jquery插件库3"/></a> 
+				<a href="#" target="_blank"><img src="img/huashanbei.jpg" title="jquery插件库4" alt="jquery插件库4"/></a> 
+			</div>
+		</div>
 	</div>
-	</div>
-	</div>
+
 </div>
 
+<!--分组介绍-->
+<div class="screen" id="additionalscreen">
+	<span class="vertical_line" style="left:18%;"></span>
+	<span class="vertical_line" style="left:34%;"></span>
+	<span class="vertical_line" style="left:50%;"></span>
+	<span class="vertical_line" style="left:66%;"></span>
+	<span class="vertical_line" style="left:82%;"></span>
 
-<div class="screen" style="top:200%;background-size:100%;background: white no-repeat;">
-	<span style="position:absolute;left:18%;height:60%;width:2px;top:25%;background:black;z-index:5;"></span>
-	<span style="position:absolute;left:34%;height:60%;width:2px;top:25%;background:black;z-index:5;"></span>
-	<span style="position:absolute;left:50%;height:60%;width:2px;top:25%;background:black;z-index:5;"></span>
-	<span style="position:absolute;left:66%;height:60%;width:2px;top:25%;background:black;z-index:5;"></span>
-	<span style="position:absolute;left:82%;height:60%;width:2px;top:25%;background:black;z-index:5;"></span>
 	<span class="group" style="left:2%;">
-		<span id="group_icon_1">
-			
-		</span>
+		<span id="group_icon_1"></span>
 	</span>
+
 	<span class="group" style="left:18%;">
 		<span id="group_icon_2"></span>
-		<span style="color:white;position:absolute;top:0%;"><p>asdasdjskahdlkjashdas</p></span>
 	</span>
+
 	<span class="group" style="left:34%;">
 		<span id="group_icon_3"></span>
 	</span>
+
 	<span class="group" style="left:50%;">
 		<span id="group_icon_4"></span>
 	</span>
+
 	<span class="group" style="left:66%;">
 		<span id="group_icon_5"></span>
 	</span>
+
 	<span class="group" style="left:82%;">
 		<span id="group_icon_6"></span>
 	</span>
 </div>
+
+<!--协会历史-->
 <div class="screen" style="top: 300%;background:white;" id="thirdscreen">
-	<span style="position:absolute;left:50%;margin:0px;height:100%;width:50%;background:black;"><h2 style="text-align:center;color:white;font-size:700%;margin-top:40%;font-family:'Microsoft YaHei';">2016</h2></span>
-	<span id="xdsec_history_icon_1"></span>
-	<span id="xdsec_history_line_1">
-		<p id="xdsec_history_content_1" style="text-align:center;position:absolute;right:5%;margin-bottom:5px;margin-top:5px;">苟利国家生死以</p>
-	</span>
-	<span id="xdsec_history_icon_2"></span>
-	<span id="xdsec_history_line_2">
-		<p id="xdsec_history_content_2" style="text-align:center;position:absolute;right:5%;margin-bottom:5px;margin-top:5px;">岂因祸福避趋之</p>
-	</span>
-	<span id="xdsec_history_icon_3"></span>
-	<span id="xdsec_history_line_3">
-		<p id="xdsec_history_content_1" style="text-align:center;position:absolute;right:5%;margin-bottom:5px;margin-top:5px;">苟利国家生死以</p>
-	</span>
-	<span id="xdsec_history_icon_4"></span>
-	<span id="xdsec_history_line_4">
-		<p id="xdsec_history_content_1" style="text-align:center;position:absolute;right:5%;margin-bottom:5px;margin-top:5px;">苟利国家生死以</p>
-	</span>
-	<span id="xdsec_history_icon_5"></span>
-	<span id="xdsec_history_line_5">
-		<p id="xdsec_history_content_1" style="text-align:center;position:absolute;right:5%;margin-bottom:5px;margin-top:5px;">苟利国家生死以</p>
-	</span>
-	<span id="xdsec_history_icon_6"></span>
-	<span id="xdsec_history_line_6">
-		<p id="xdsec_history_content_1" style="text-align:center;position:absolute;right:5%;margin-bottom:5px;margin-top:5px;">苟利国家生死以</p>
-	</span>
 </div>
 
+<!--前方高能-->
 <div class="screen" style="top: 400%;background:white;" id="forthscreen">
 <div id="member_background">
 	<div class="head" id="member_1" style="background:url('img/head/le4f.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">冷夜</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>冷夜</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('http://le4f.net','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_2" style="background:url('img/head/zing.jpg');;background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">Zing</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>Zing</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('http://nevercease.co/','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_3" style="background:url('img/head/phithon.jpg');;background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">Phithon</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">喜欢一切关于代码的事物。</p>
+			<h4>Phithon</h4>
+			<p>喜欢一切关于代码的事物。</p>
 			<button class="member_button" onclick="window.open('http://www.leavesongs.com','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_4" style="background:url('img/head/dm_.jpg');;background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_5" style="background:black;background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_6" style="background:url('img/head/hkhide.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_7" style="background:black;background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_8" style="background:url('img/head/d_m.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_9" style="background:url('img/head/bigtang.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_10" style="background:url('img/head/chuhades.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_11"  style="background:url('img/head/izy.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_12"  style="background:url('img/head/netfairy.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
@@ -298,141 +285,141 @@
 	</div>
 	<div class="head" id="member_20"  style="background:url('img/head/th1nk.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_21"  style="background:url('img/head/ashitaka.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4 style="">组员ID</h4>
+			<p style="">一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_22"  style="background:url('img/head/larryxi.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_23"  style="background:url('img/head/damnull.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_24"  style="background:url('img/head/mathias.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_25"  style="background:url('img/head/rj1ng.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_26"  style="background:url('img/head/rickyhao.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_27"  style="background:url('img/head/ulin.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_28"  style="background:url('img/head/silver.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_29"  style="background:url('img/head/sudalover.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_30"  style="background:url('img/head/songfeng.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_31"  style="background:url('img/head/heimao.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_32"  style="background:url('img/head/icemakr.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_33"  style="background:url('img/head/klaus.png');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_34"  style="background:url('img/head/drimtuer.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_35"  style="background:url('img/head/iphan.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_36"  style="background:url('img/head/watcher.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_37"  style="background:url('img/head/halo.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_38"  style="background:url('img/head/liuil.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
 	<div class="head" id="member_39"  style="background:url('img/head/jianwutianxia.jpg');background-size:100%;">
 		<span class="info">
-			<h4 style="text-align:center;margin:0px;margin-top:3px;">组员ID</h4>
-			<p style="text-align:center;margin:0px;margin-top:5px;">一句话介绍</p>
+			<h4>组员ID</h4>
+			<p>一句话介绍</p>
 			<button class="member_button" onclick="window.open('博客地址','_blank')">Blog</button>
 		</span>
 	</div>
@@ -440,28 +427,33 @@
 		<span class="info"></span>
 	</div>
 </div>
-
 </div>
+
+<!--招新板块-->
 <div class="screen" style="top: 500%;background:yellow;" id="fifthscreen"></div>
+
+<!--各类入口-->
 <div class="screen" style="top:600%;background:white" id="sixthscreen">
 	<span id="collections_1"></span>
 	<span id="collections_2"></span>
 	<span id="collections_3"></span>
 	<span id="collections_4"></span>
+	<!--页脚-->
 	<span style="position:absolute;bottom:0%;width:100%;height:20%;background:white;border-top:2px solid black;"></span>
 </div>
 
+<!--导航按钮-->
 <div class="list_guide" style="z-index:5;bottom:3%;" id="list_guide_top"><p class="list_guide_alphabet"></p></div>
 <div class="list_guide" style="z-index:5;" id="list_guide"><p class="list_guide_alphabet">+</p></div>
-<div class="list_guide" style="z-index:-1;" id="list_guide_x"><p  class="list_guide_alphabet">X</p></div>
-<div class="list_guide" style="z-index:-1;" id="list_guide_d"><p  class="list_guide_alphabet">D</p></div>
-<div class="list_guide" style="z-index:-1;" id="list_guide_s"><p  class="list_guide_alphabet">S</p></div>
-<div class="list_guide" style="z-index:-1;" id="list_guide_e"><p  class="list_guide_alphabet">E</p></div>
-<div class="list_guide" style="z-index:-1;" id="list_guide_c"><p  class="list_guide_alphabet">C</p></div>
+<div class="list_guide" id="list_guide_x"><p  class="list_guide_alphabet">X</p></div>
+<div class="list_guide" id="list_guide_d"><p  class="list_guide_alphabet">D</p></div>
+<div class="list_guide" id="list_guide_s"><p  class="list_guide_alphabet">S</p></div>
+<div class="list_guide" id="list_guide_e"><p  class="list_guide_alphabet">E</p></div>
+<div class="list_guide" id="list_guide_c"><p  class="list_guide_alphabet">C</p></div>
 
 
 
 </div>
-</body>
 
+</body>
 </html>  
