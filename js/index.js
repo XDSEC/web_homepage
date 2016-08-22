@@ -213,6 +213,7 @@ $(document).ready(function ()
 	$(window).scroll(function (){
 		$('#list_guide_top p').text(scroll);
 		list_guide_show();
-		screen_lock(10);
+		screen_lock(1);
 	});
+	
 });
