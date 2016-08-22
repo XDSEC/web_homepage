@@ -211,9 +211,7 @@ $(document).ready(function ()
 	$('#list_guide_top p').text(scroll);
 	
 	$(window).scroll(function (){
-		$('#list_guide_top p').text(scroll);
 		list_guide_show();
-		screen_lock(1);
 	});
 	
 });
