@@ -6,11 +6,6 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	font-family: Myriad;
 	src:url("../fonts/MyriadSetPro-ExtraThin.otf");
 }
-@font-face
-{
-	font-family: "SegeoUI";
-	src:url("../fonts/segoeuil.ttf");
-}
 .screen
 {
 	height: 100%;
@@ -128,7 +123,7 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	font-size: 200%;
 }
 /*分组介绍CSS*/
-#additionalscreen
+#groupintro
 {
 	top:200%;
 	background-size:100%;
@@ -138,25 +133,27 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 {
 	position:absolute;
 	height:60%;
-	width:2px;
+	width:1px;
 	top:25%;
-	background:black;z-index:5;
+	background:black;
+	z-index:5;
 }
 .group
 {
-	position:absolute;
 	width:16%;
 	height:100%;
 	padding-top:13%;
+	position:absolute;
 }
-.group h4
+.group h3, .group h4, .group p
 {
-	padding: 20px;
+	padding:15px;
 }
-.group p 
-{
-	padding:25px;
+
+.group h3, .group h4{
+	text-align:center;
 }
+
 /*导航按钮CSS*/
 .list_guide
 {
@@ -175,11 +172,20 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	-o-transition:0.2s; /* Opera */
 }
 /*协会成员CSS*/
+#member_background{
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	margin:auto;
+	height:480px;
+	width:1200px;
+	position:absolute;
+}
 .head
 {
 	width:120px;
 	height:120px;
-	margin: 5px;
 	float: left;
 	background-size:cover !important;
 }
@@ -206,11 +212,18 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	position:absolute;
 	background:firebrick;
 	left:30px;
+	text-align:center;
 	bottom:10px;
 	width:60px;
 	height:20px;
 	border:none;
 	border-radius:4px;
+	text-decoration:none;
+	font-size:14px;
+}
+
+.member_button:link,.member_button:visited,.member_button:hover,.member_button:active {
+	color:#ffffff
 }
 
 

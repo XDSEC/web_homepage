@@ -142,7 +142,7 @@ function screen_lock(difficult)
 }
 function members()
 {
-	var left =($(window).width()-1300)/2;
+/*	var left =($(window).width()-1300)/2;
 	var top =($(window).height()-520)/2;
 	$('#member_background').css({
 		'position':'absolute',
@@ -151,7 +151,7 @@ function members()
 		'height':'520px',
 		'width':'1300px',
 		'margin':'0px',
-	});
+	});*/
 
 	var e = new sHover("head","info");
 	e.set({
