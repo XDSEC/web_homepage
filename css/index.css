@@ -96,7 +96,9 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 /*协会介绍CSS*/
 #secondscreen
 {
-	top: 100%;background-size:100%;background:url('../img/bg_intro.png');
+	top: 100%;
+	background-size:100%;
+	background:url('../img/bg_intro.png');
 }
 .xdsec_information_title
 {
@@ -140,6 +142,21 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	top:25%;
 	background:black;z-index:5;
 }
+.group
+{
+	position:absolute;
+	width:16%;
+	height:100%;
+	padding-top:13%;
+}
+.group h4
+{
+	padding: 20px;
+}
+.group p 
+{
+	padding:25px;
+}
 /*导航按钮CSS*/
 .list_guide
 {
@@ -182,22 +199,7 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	text-align:center;
 	margin:5px;
 	margin-top:3px;
-	font-size:13px;
-}
-.group
-{
-	position:absolute;
-	width:16%;
-	height:100%;
-	padding-top:13%;
-}
-.group h4
-{
-	padding: 20px;
-}
-.group p 
-{
-	padding:25px;
+	font-size:12px;
 }
 .member_button
 {
