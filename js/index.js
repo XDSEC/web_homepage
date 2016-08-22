@@ -155,8 +155,8 @@ function members()
 	var e = new sHover("head","info");
 	e.set({
 	speed:7,
-	opacity:100,						
-	opacityChange:false
+	opacity:80,						
+	opacityChange:true
 	});
 }
 function group_icon()

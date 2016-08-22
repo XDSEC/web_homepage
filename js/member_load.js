@@ -24,7 +24,7 @@ members_list=[
 {imgname:"mathias.jpg",name:"Math1as", intro:"没有观剧者的真实不过等同于幻想", blog:"http://www.math1as.com", blogname:"Math1as' Blog"},
 {imgname:"rj1ng.jpg",name:"Rj1ng", intro:"Ring of fortune.", blog:"http://rj1ng.com", blogname:"Rj1ng's Blog"},
 {imgname:"rickyhao.jpg",name:"Ricky", intro:"滴水成珠", blog:"http://www.rickyhao.com", blogname:"Ricky's Blog"},
-{imgname:"ulin.jpg",name:"Ulin", intro:"精通SQLI,XSS,UPLOAD,WebShell,EXP等词汇的书写", blog:"http://www.u1in.cn", blogname:"Ulin's Blog"},
+{imgname:"ulin.jpg",name:"Ulin", intro:"XDSEC打杂程序员", blog:"http://www.u1in.cn", blogname:"Ulin's Blog"},
 {imgname:"silver.jpg",name:"Silver", intro:"高级IDA启动工程师", blog:"http://www.iret.xyz", blogname:"Silver's Blog"},
 {imgname:"sudalover.jpg",name:"Sud0", intro:"不懂算法的前端狗", blog:"http://blog.sudalover.com", blogname:"Sud0's Blog"},
 {imgname:"songfeng.jpg",name:"松风", intro:"游离在边缘的、未找到状态的学习者", blog:"", blogname:"Blog"},
@@ -54,7 +54,6 @@ for (; i<len; i++){
 		.replace(/\{imgname\}/, members_list[i].imgname )
 		.replace(/\{intro\}/, members_list[i].intro )
 		.replace(/\{blog\}/, members_list[i].blog )
-		.replace(/\{blogname\}/, members_list[i].blogname )
 	}
 };
 $('.member_list')[0].innerHTML=fragment;

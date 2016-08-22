@@ -170,7 +170,7 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 }
 .info
 {
-	background:firebrick;
+	background:powderblue;
 }
 .info h4
 {
@@ -181,19 +181,29 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 .info p
 {
 	text-align:center;
-	margin:0px;
-	margin-top:5px;
+	margin:5px;
+	margin-top:3px;
+	font-size:5px;
 }
 .group
 {
 	position:absolute;
 	width:16%;
 	height:100%;
+	padding-top:13%;
+}
+.group h4
+{
+	padding: 5%;
+}
+.group p 
+{
+	padding:8%;
 }
 .member_button
 {
 	position:absolute;
-	background:powderblue;
+	background:firebrick;
 	left:35px;
 	bottom:10px;
 	width:40px;
