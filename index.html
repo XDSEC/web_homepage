@@ -9,37 +9,7 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.slides.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-
-	<script type="text/javascript">
-
-	/*照片banner我先放这里测试一下*/
-		var t = n =0, count;
-		$(document).ready(function(){ 
-		count=$("#banner_list a").length;
-		$("#banner_list a:not(:first-child)").hide();
-		$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
-		$("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
-		$("#banner li").click(function() {
-		var i = $(this).text() -1;//获取Li元素内的值，即1，2，3，4
-		n = i;
-		if (i >= count) return;
-		$("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
-		$("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")})
-		$("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
-		document.getElementById("banner").style.background="";
-		$(this).toggleClass("on");
-		$(this).siblings().removeAttr("class");
-		});
-		t = setInterval("showAuto()", 4000);
-		$("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
-		})
-
-		function showAuto()
-		{
-		n = n >=(count -1) ?0 : ++n;
-		$("#banner li").eq(n).trigger('click');
-		}
-	</script>
+		<script type="text/javascript" src="js/banner.js"></script>
 
 
 </head>
@@ -121,19 +91,50 @@
 	</span>
 	<!-- 照片banner待定 -->
 	<div style="position:absolute;left:45%;height:100%;width:55%;background:white;padding-top:4%;">
-		<div id="banner">
-			<ul>
-				<li class="on">1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-			</ul>
-			<div id="banner_list"> 
-				<a href="#" target="_blank"><img src="img/alibaba.jpg" title="jquery插件库1" alt="jquery插件库1"/></a> 
-				<a href="#" target="_blank"><img src="img/l.jpg" title="jquery插件库2" alt="jquery插件库2"/></a> 
-				<a href="#" target="_blank"><img src="img/share.jpg" title="jquery插件库3" alt="jquery插件库3"/></a> 
-				<a href="#" target="_blank"><img src="img/huashanbei.jpg" title="jquery插件库4" alt="jquery插件库4"/></a> 
+		<div id="container">
+		<div id="sliderContainer">
+		<div id="prev" class="arrow"></div>
+
+
+		<div id="slider">
+
+		<div class="slide">
+			<div class="slideCopy">
+				<p></p>
+				<h2></h2>
 			</div>
+			<img src="img/alibaba.jpg">
+		</div>
+
+		<div class="slide">
+			<div class="slideCopy">
+				<p></p>
+				<h2></h2>
+			</div>
+			<img src="img/share.jpg"> 
+		</div>
+
+		<div class="slide">
+			<div class="slideCopy">
+				<p></p>
+				<h2></h2>
+			</div>
+			<img src="img/l.jpg"> 
+		</div>
+
+		<div class="slide">
+			<div class="slideCopy">
+				<p></p>
+				<h2></h2>
+			</div>
+			<img src="img/huashanbei.jpg"> 
+		</div>
+
+		</div>
+
+		<div id="pagination"></div>
+		<div id="next" class="arrow"></div>
+		</div>
 		</div>
 	</div>
 

@@ -213,29 +213,102 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 }
 
 
+#container {
+  padding: 50px 0;
+  overflow: hidden;
+  margin:100px auto;
+}
+#slider {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border: #DEDEDE solid 1px;
+  padding: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+}
 
+#slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
+.slide {
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+}
 
+.slide.active {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: auto;
+}
 
+.slideCopy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
 
+.slideCopy p { font-size: 18px; }
 
+.arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: auto 0;
+  cursor: pointer;
+  z-index: 100;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
 
+#prev {
+  left: 30px;
+  background-image: url(../img/arrow-left.png);
+  background-position: 13px center;
+  transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+}
 
+#next {
+  right: 30px;
+  background-image: url(../img/arrow-right.png);
+  background-position: 16px center;
+  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+}
 
+.sliderHovered .arrow {
+  opacity: 1;
+  pointer-events: auto;
+}
 
+.sliderHovered #prev {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
 
-
-
-
-
-
-/*照片banner CSS待定*/
-#banner { position: absolute; left:0%;width: 90%; height: 60%; border: 1px solid #666; overflow: hidden; }
-#banner_list img { border: 0px; }
-#banner_bg { position: absolute; bottom: 0; background-color: #000; height: 30px; filter: Alpha(Opacity=30); opacity: 0.3; z-index: 50; cursor: pointer; width: 90%; }
-#banner_info { position: absolute; bottom: 0; left: 5px; height: 22px; color: #fff; z-index: 51; cursor: pointer }
-#banner_text { position: absolute; width: 120px; z-index: 52; right: 3px; bottom: 3px; }
-#banner ul { position: absolute; list-style-type: none; filter: Alpha(Opacity=80); opacity: 0.8; z-index: 52; margin: 0; padding: 0; bottom: 3px; right: 5px; }
-#banner ul li { padding: 0px 8px; float: left; display: block; color: #FFF; background: #6f4f67; cursor: pointer; border: 1px solid #333; }
-#banner ul li.on { background-color: #000; }
-#banner_list a { position: absolute; }
+.sliderHovered #next {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+	
