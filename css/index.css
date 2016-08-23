@@ -143,17 +143,17 @@ width:45%;
 .screen_group{
 	top:200%;
 	display:inline-flex;
-}
-.screen_group_container{
 	background: #FFFFCC;
 	background-position:center;
+}
+.screen_group_container{
 	display:flex;
 	flex-wrap:nowrap;
 	align-items:center;
 	flex-direction:column;
     justify-content: center;
-	height:70%;
-	width:80%;
+	height:80%;
+	width:85%;
 	margin:auto;
 }
 .group_line{
@@ -163,25 +163,27 @@ width:45%;
 .group
 {
 	width:33%;
-	margin:auto;
+	margin:auto 20px;
+	display:flex;
+	padding:10px;
+	background:white;
 }
 .group_head{
-	width:120px;
+	height:100%;
 	float:left;
 	text-align:center;
-	margin-right:20px;
 }
 .group_head>h4, .group_head>h3{
-margin:0;
-}
-.group_text{
-	margin-:20px;
 }
 .group_icon{
 	width:100px;
 	height:100px;
 	border-radius:50px;
 	box-shadow:black 5px 5px 20px;
+}
+.group_text{
+	margin-left:15px;
+	line-height:1.5em;
 }
 /*导航按钮CSS*/
 .list_guide
