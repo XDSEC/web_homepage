@@ -19,7 +19,7 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	height: 100%;
 	width: 20%;
 	top:0%;
-	background-color: black;
+	background-color: white;
 	opacity: 0.4;
 	z-index: 1;
 	transition: 1s;
@@ -45,12 +45,12 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 	text-align:center;
 	margin:0%;
 }
-.alphabet_font a{color:white;text-decoration:none;}
-.alphabet_font a:link{color:white;}
-.alphabet_font a:visited{color:white;}
-.alphabet_font a:hover{	color:white;}
-.alphabet_font a:active{	color:white;}
-.alphabet_font a:focus{color:white;}
+.alphabet_font a{color:black;text-decoration:none;}
+.alphabet_font a:link{color:black;}
+.alphabet_font a:visited{color:black;}
+.alphabet_font a:hover{	color:black;}
+.alphabet_font a:active{	color:black;}
+.alphabet_font a:focus{color:black;}
 .guide	
 {
 	position: absolute;
@@ -143,9 +143,8 @@ width:45%;
 #groupintro
 {
 	top:200%;
-	background: url('../img/xdst.png') no-repeat;
+	background: #FFFFCC;
 	background-position:center;
-	background-color:#ddd;
 }
 .vertical_line
 {
@@ -162,6 +161,7 @@ width:45%;
 	height:100%;
 	padding-top:13%;
 	position:absolute;
+	
 }
 .group h3, .group h4, .group p
 {
@@ -209,7 +209,7 @@ width:45%;
 }
 .info
 {
-	background:powderblue;
+	background:#003366;
 	margin:0px;
 }
 .info h4
@@ -217,9 +217,11 @@ width:45%;
 	text-align:center;
 	margin:0px;
 	margin-top:3px;
+	color: #FFFF99;
 }
 .info p
 {
+	color: #FFFF99;
 	text-align:center;
 	margin:5px;
 	margin-top:3px;
@@ -280,7 +282,7 @@ width:45%;
 	position:absolute;
 	width:200px;
 	height:50px;
-	background:powderblue;
+	background:#99CCCC;
 	bottom:25px;
 }
 .collection_name h4
