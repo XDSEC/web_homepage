@@ -30,16 +30,19 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 .alphabet_font
 {
 	position:absolute;
-	left:45%;
-	top:50%;
-	display:block;
-	transform:scale(10,11);
+	top:40%;
+	font-size: 900%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*display:block;
+	transform:scale(10,11);*/
 }
 .alphabet_font a p
 {
 	font-family: Myriad;
 	text-align:center;
-	margin:0px;
+	margin:0%;
 }
 .alphabet_font a{color:white;text-decoration:none;}
 .alphabet_font a:link{color:white;}
