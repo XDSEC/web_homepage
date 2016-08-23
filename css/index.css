@@ -257,14 +257,18 @@ width:45%;
 }
 #collections_background
 {
-	position:absolute;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	margin:auto;
-	height:300px;
-	width:1000px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 300px;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 .collection_icon
 {
