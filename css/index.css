@@ -140,38 +140,49 @@ width:45%;
 	font-size: 200%;
 }
 /*分组介绍CSS*/
-#groupintro
-{
+.screen_group{
 	top:200%;
+	display:inline-flex;
+}
+.screen_group_container{
 	background: #FFFFCC;
 	background-position:center;
+	display:flex;
+	flex-wrap:nowrap;
+	align-items:center;
+	flex-direction:column;
+    justify-content: center;
+	height:70%;
+	width:80%;
+	margin:auto;
 }
-.vertical_line
-{
-	position:absolute;
-	height:60%;
-	width:1px;
-	top:25%;
-	background:black;
-	z-index:5;
+.group_line{
+	display:flex;
+	height:100%;
 }
 .group
 {
-	width:16%;
-	height:100%;
-	padding-top:13%;
-	position:absolute;
-	
+	width:33%;
+	margin:auto;
 }
-.group h3, .group h4, .group p
-{
-	padding:15px;
-}
-
-.group h3, .group h4{
+.group_head{
+	width:120px;
+	float:left;
 	text-align:center;
+	margin-right:20px;
 }
-
+.group_head>h4, .group_head>h3{
+margin:0;
+}
+.group_text{
+	margin-:20px;
+}
+.group_icon{
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	box-shadow:black 5px 5px 20px;
+}
 /*导航按钮CSS*/
 .list_guide
 {
