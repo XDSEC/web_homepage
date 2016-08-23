@@ -17,7 +17,7 @@
 <body style="margin:0px;">
 
 <!-- 首屏导航 -->
- <div class="screen" style="background-size:cover;background: url('img/1.jpg');">
+ <div class="screen" style="background-size:cover;background: #FFFFCC;">
  	<span class="show">
  		<span class="guide">
  			<a>
@@ -84,7 +84,7 @@
 <!--协会介绍-->
 <div class="screen" id="secondscreen">
 	<div class="xdsec_intro">
-	<div style="top:0;height:100%;background-color:black;opacity:0.2"></div>
+	<div style="top:0;height:100%;background-color:#FFFFCC;opacity:0.8"></div>
 	<span class="xdsec_information_title">
 		<h1 style="text-align:center;font-size:300%;color:white;">西电信息安全协会</h1>
 	</span>
@@ -111,49 +111,44 @@
 
 <!--分组介绍-->
 <div class="screen" id="groupintro">
-	<span class="vertical_line" style="left:18%;"></span>
-	<span class="vertical_line" style="left:34%;"></span>
-	<span class="vertical_line" style="left:50%;"></span>
-	<span class="vertical_line" style="left:66%;"></span>
-	<span class="vertical_line" style="left:82%;"></span>
 
 	<div class="group" style="left:2%;">
-		<span id="group_icon_1"  style="background:url('img/ida.png')"></span>
+		<span id="group_icon_1"  style="background:url('img/ida.jpg');box-shadow:5px 5px 15px black;"></span>
 		<h3>二进制组</h3>
 		<h4>Bin</h4>
 		<p>以Windows和Linux为平台，学习可执行程序的逆向分析技术，如软件调试与破解，以及程序漏洞利用技术，例如栈溢出、堆管理器的漏洞利用和其他高阶技巧。</p>
 	</div>
 
 	<span class="group" style="left:18%;">
-		<span id="group_icon_2"  style="background:url('img/burpsuite.png')"></span>
+		<span id="group_icon_2"  style="background:url('img/burpsuite.png');box-shadow:5px 5px 15px black;"></span>
 		<h3>渗透组</h3>
 		<h4>Web</h4>
 		<p>嘿，客官，您点的新鲜的webshell上门啦。本小组带你从web安全入手，了解对一个网站进行完整的渗透测试的流程，同时也参与ctf大赛的web环节，走上人生巅峰，原则：拒绝黑产，授权测试。</p>
 	</span>
 
 	<span class="group" style="left:34%;">
-		<span id="group_icon_3" style="background:url('img/android.jpg')"></span>
+		<span id="group_icon_3" style="background:url('img/android.jpg');box-shadow:5px 5px 15px black;"></span>
 		<h3>移动安全组</h3>
 		<h4>Mobile</h4>
 		<p>新司机飙车，带你从Android开发入手，学习如何从App中提取关键算法，找到相关漏洞。PS：拒绝Apk二次打包，从我做起。</p>
 	</span>
 
 	<span class="group" style="left:50%;">
-		<span id="group_icon_4"  style="background:url('img/crypto.jpg')"></span>
+		<span id="group_icon_4"  style="background:url('img/crypto.jpg');box-shadow:5px 5px 15px black;"></span>
 		<h3>密码组</h3>
 		<h4>Crypto</h4>
 		<p>萌新试车，从古典密码起步，主要关注现代密码学原理与密码协议，以及加密算法的安全使用。</p>
 	</span>
 
 	<span class="group" style="left:66%;">
-		<span id="group_icon_5" style="background:url('img/wireshark.png')"></span>
+		<span id="group_icon_5" style="background:url('img/wireshark.png');box-shadow:5px 5px 15px black;"></span>
 		<h3>协议组</h3>
 		<h4>Proto</h4>
 		<p>由浅入深，发现网络协议的魅力。如果上层难以下手，不妨试试下层吧。</p>
 	</span>
 
 	<span class="group" style="left:82%;">
-		<span id="group_icon_6" style="background:url('img/vs2015.png')"></span>
+		<span id="group_icon_6" style="background:url('img/vs2015.jpg');box-shadow:5px 5px 15px black;"></span>
 		<h3>编程开发组</h3>
 		<h4>Dev</h4>
 		<p>我们着力研究以c++为基础的各种软件开发，以及qt跨平台图形界面编程</p>
@@ -161,7 +156,7 @@
 </div>
 
 <!--协会历史-->
-<div class="screen" style="top: 300%;background:white;" id="thirdscreen">
+<div class="screen" style="top: 300%;background:#FFFFCC;" id="thirdscreen">
 	<section class="cd-horizontal-timeline">
 	<div class="timeline">
 		<div class="events-wrapper">
@@ -260,7 +255,7 @@
 </div>
 
 <!--前方高能-->
-<div class="screen" style="top: 400%;background:url('img/members.jpg');background-size:cover;" id="forthscreen">
+<div class="screen" style="top: 400%;background:#FFFFCC;background-size:cover;" id="forthscreen">
 <div id="member_background" class="member_list">
 </div>
 <script type="template" id="t_member_noblog">
@@ -287,10 +282,30 @@
 </div>
 
 <!--招新板块-->
-<div class="screen" style="top: 500%;background:yellow;" id="fifthscreen"></div>
+<div class="screen" style="top: 500%;background:url('img/nanxiaoniao.jpg');background-size:100%;" id="fifthscreen">
+	
+<span style="position:absolute;right:140px;width:300px;top:0px;bottom:0px;margin:auto;height:500px;background:white;box-shadow:5px 5px 15px black;">
+	<h2 style="padding:10px;">我们有</h2>
+	<ul style="text-align:center">
+		<li>技术氛围</li>
+		<li>攻防实践</li>
+		<li>竞赛带飞</li>
+		<li>狼人杀！</li>
+	</ul>
+	<h2 style="padding:10px;">如果你</h2>
+	<ul  style="text-align:center">
+		<li>乐于分享</li>
+		<li>不忘初心</li>
+		<li>善于思考</li>
+		<li>专注技术</li>
+	</ul>
+	<button style="background:url('img/qb.jpg');background-size:100%;position:absolute;left:50px;width:200px;height:80px;bottom:50px;font-size:20px;">加入</button>
+</span>
+
+</div>
 
 <!--各类入口-->
-<div class="screen" style="top:600%;background:white" id="sixthscreen">
+<div class="screen" style="top:600%;background:#FFFFCC" id="sixthscreen">
 	<span id="collections_background">
 		<span class="collections">
 			<span class="collection_icon" style="background:url('img/collection_bbs.jpg')"></span>
@@ -319,7 +334,9 @@
 		</span>
 	</span>
 	<!--页脚-->
-	<span style="position:absolute;bottom:0%;width:100%;height:20%;background:white;border-top:2px solid black;"></span>
+	<span style="position:absolute;bottom:0%;width:100%;height:20%;background:#333333;border-top:2px solid #333333;">
+		<h3 style="text-align:center;color:white;">这是个页脚，但是写什么我还不知道。</h3>
+	</span>
 </div>
 
 <!--导航按钮-->
