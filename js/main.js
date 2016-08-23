@@ -128,10 +128,22 @@ jQuery(document).ready(function($){
 	}
 
 	function setDatePosition(timelineComponents, min) {
+		var dist=new Array();
 		for (i = 0; i < timelineComponents['timelineDates'].length; i++) { 
 		    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
 		    	distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + 2;
-		    timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm*min+'px');
+			dist.push(distanceNorm);
+		}
+		for ( i = 1 ; i < dist.length;i++){
+			if (dist[i]-dist[i-1]>8){
+				var p = dist[i] - (dist[i-1]+(dist[i]-dist[i-1])/12);
+				for ( j = i ; j < dist.length; j++){
+					dist[j]-=p;
+				}
+			}
+		}
+		for (i = 0; i < timelineComponents['timelineDates'].length; i++) { 
+		    timelineComponents['timelineEvents'].eq(i).css('left', dist[i]*min+'px');
 		}
 	}
 
