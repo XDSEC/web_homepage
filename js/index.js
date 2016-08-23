@@ -49,27 +49,27 @@ function list_guide_toggle()
 		$('#list_guide').css('opacity',1);
 		$('#list_guide_top').css('opacity',1);
 		$('#list_guide_x').css({
-			'bottom':'62%',
+			'bottom':'400px',
 			'opacity':'1',
 			'z-index':'100'
 		});
 		$('#list_guide_d').delay(500).css({
-			'bottom':'52%',
+			'bottom':'340px',
 			'opacity':'1',
 			'z-index':'100'
 		});
 		$('#list_guide_s').delay(500).css({
-			'bottom':'42%',
+			'bottom':'280px',
 			'opacity':'1',
 			'z-index':'100'
 		});
 		$('#list_guide_e').delay(500).css({
-			'bottom':'32%',
+			'bottom':'220px',
 			'opacity':'',
 			'z-index':'100'
 		});
 		$('#list_guide_c').delay(500).css({
-			'bottom':'22%',
+			'bottom':'160px',
 			'opacity':'1',
 			'z-index':'100'
 		});
@@ -78,27 +78,27 @@ function list_guide_toggle()
 	else 
 	{
 		$('#list_guide_x').css({
-			'bottom':'12%',
+			'bottom':'100px',
 			'opacity':'0',
 			'z-index':'-1'
 		});
 		$('#list_guide_d').delay(500).css({
-			'bottom':'12%',
+			'bottom':'100px',
 			'opacity':'0',
 			'z-index':'-1'
 		});
 		$('#list_guide_s').delay(500).css({
-			'bottom':'12%',
+			'bottom':'100px',
 			'opacity':'0',
 			'z-index':'-1'
 		});
 		$('#list_guide_e').delay(500).css({
-			'bottom':'12%',
+			'bottom':'100px',
 			'opacity':'0',
 			'z-index':'-1'
 		});
 		$('#list_guide_c').delay(500).css({
-			'bottom':'12%',
+			'bottom':'100px',
 			'opacity':'0',
 			'z-index':'-1'
 		});
