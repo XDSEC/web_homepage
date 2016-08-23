@@ -5,6 +5,7 @@ $(document).ready(function(){
 	var autoSwitchSpeed = 4000;	// Auto slider speed
 	var hoverPause = true;	// Pause auto slider on hover
 	var keyPressSwitch = true;	// Key press next/prev
+	var gotslideprev = false;
 	
 	// Add initial active class
 	$('.slide').first().addClass('active');
@@ -15,8 +16,17 @@ $(document).ready(function(){
 	// Show first slide
 	$('.active').show();
 		
+	function _nextSlide(){
+	    if (gotslideprev){
+			gotslideprev=false;
+		}else{
+			nextSlide();
+		}
+	}
+
 	// Switch to next slide
 	function nextSlide(){
+		gotslideprev = true;
 		$('.active').removeClass('active').addClass('oldActive');
 		if($('.oldActive').is(':last-child')){
 			$('.slide').first().addClass('active');
@@ -30,6 +40,7 @@ $(document).ready(function(){
 	
 	// Switch to prev slide
 	function prevSlide(){
+		gotslideprev = true;
 		$('.active').removeClass('active').addClass('oldActive');
 		if($('.oldActive').is(':first-child')){
 			$('.slide').last().addClass('active');
@@ -61,7 +72,7 @@ $(document).ready(function(){
 	// Auto slider handler
 	if(autoSwitch === true){
 		var interval = null;
-		interval = window.setInterval(function(){nextSlide();},autoSwitchSpeed);
+		interval = window.setInterval(function(){_nextSlide();},autoSwitchSpeed);
 	}
 
 	// Stop and start on hover
