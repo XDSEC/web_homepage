@@ -28,12 +28,12 @@ jQuery(document).ready(function($){
 			//detect click on the next arrow
 			timelineComponents['timelineNavigation'].on('click', '.next', function(event){
 				event.preventDefault();
-				updateSlide(timelineComponents, timelineTotWidth, 'next');
+				showNewContent(timelineComponents, timelineTotWidth, 'next');
 			});
 			//detect click on the prev arrow
 			timelineComponents['timelineNavigation'].on('click', '.prev', function(event){
 				event.preventDefault();
-				updateSlide(timelineComponents, timelineTotWidth, 'prev');
+				showNewContent(timelineComponents, timelineTotWidth, 'prev');
 			});
 			//detect click on the a single event - show new event content
 			timelineComponents['eventsWrapper'].on('click', 'a', function(event){
