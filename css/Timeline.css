@@ -193,7 +193,6 @@ ol, ul {
 }
 .cd-timeline-navigation a.prev {
   left: 0;
-  background:#3399FF;
   -webkit-transform: translateY(-50%) rotate(180deg);
   -moz-transform: translateY(-50%) rotate(180deg);
   -ms-transform: translateY(-50%) rotate(180deg);
