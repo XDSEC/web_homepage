@@ -8,14 +8,13 @@ font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSan
 }
 h1,h2,h3,h4,p,em,li
 {
-	color: white;
+	color: black;
 }
 .screen
 {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background-color: #1F431F;
 }
 /*导航屏CSS*/
 .alphabet_background
@@ -105,8 +104,7 @@ h1,h2,h3,h4,p,em,li
 #secondscreen
 {
 	top: 100%;
-	background-size:100%;
-	background:url('../img/bg_intro.png');
+	background-color: rgb(128,191,255);
 }
 .xdsec_intro{
 position:absolute;
@@ -118,7 +116,6 @@ width:45%;
 	left:45%;
 	height:100%;
 	width:55%;
-	background-color:#1F431F;
 }
 .xdsec_information_title
 {
@@ -145,7 +142,7 @@ width:45%;
 }
 .xdsec_information_content p
 {
-	color: white;
+color:#000;
 }
 .xdsec_information_content::first-letter
 {
@@ -155,14 +152,18 @@ width:45%;
 .screen_group{
 	top:200%;
 	display:inline-flex;
-	background-position:center;
+	background:url('../img/intro_bg.png');
+	background-repeat:no-repeat;
+    background-position-x: left;
+	background-size:30%;
+    background-position-y: bottom;
 }
 .screen_group_container{
 	display:flex;
 	flex-wrap:nowrap;
 	align-items:center;
 	flex-direction:column;
-   	 justify-content: center;
+   	justify-content: center;
 	height:80%;
 	width:85%;
 	margin:auto;
@@ -178,7 +179,9 @@ width:45%;
 	margin:auto 20px;
 	display:flex;
 	padding:10px;
-	background:#1F431F;
+	background:rgba(255,255,255,0.4);
+	box-shadow:0 0 15px 3px rgba(255,255,255,0.4);
+	box-shadow:0 0 20px 2px rgba(0,0,0,0.4);
 }
 .group_head{
 	height:100%;
@@ -186,7 +189,11 @@ width:45%;
 	text-align:center;
 }
 .group_head>h4, .group_head>h3{
-	color: white;
+	color: black;
+}
+.group_text p
+{
+	color: black;
 }
 .group_icon{
 	width:100px;
@@ -197,10 +204,11 @@ width:45%;
 	margin-left:15px;
 	line-height:1.5em;
 }
-.group_text p
-{
-	color: white;
+
+#thirdscreen{
+background-image:linear-gradient(180deg,white,rgb(250,250,255),rgba(79, 135, 205,0.8));
 }
+
 /*导航按钮CSS*/
 .list_guide
 {
@@ -219,6 +227,11 @@ width:45%;
 	-o-transition:0.2s; /* Opera */
 }
 /*协会成员CSS*/
+#forthscreen{
+	background:url('../img/member_bg.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
 #member_background{
 	top:0px;
 	right:0px;
