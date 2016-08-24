@@ -370,11 +370,22 @@ width:45%;
 }
 .new_we_show
 {
-	margin-left:5px;position:relative;top:20px;background:  #6CA4DB;
+	margin-left:5px;position:relative;top:20px;background:  #6CA4DB;cursor: pointer;
+	-moz-transition: 0.2s; /* Firefox 4 */
+	-webkit-transition:0.2s; /* Safari 和 Chrome */
+	-o-transition:0.2s; /* Opera */
 }
 .new_you_show
 {
-	margin-left:5px;position:relative;top:20px;
+	margin-left:5px;position:relative;top:20px;cursor: pointer;
+	-moz-transition: 0.2s; /* Firefox 4 */
+	-webkit-transition:0.2s; /* Safari 和 Chrome */
+	-o-transition:0.2s; /* Opera */
+}
+.new_we_show:hover
+{
+	top:17px;
+	box-shadow: 3px 3px 5px black;
 }
 .new_we_show:hover .new_we_hidden
 {
@@ -387,6 +398,11 @@ width:45%;
 .new_you_show
 {
 	margin-left:5px;position:relative;top:20px;background: #A45B5C;color: white;
+}
+.new_you_show:hover
+{
+	top:17px;
+	box-shadow: 3px 3px 5px black;
 }
 .new_you_show:hover .new_you_hidden
 {
