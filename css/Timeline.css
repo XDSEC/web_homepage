@@ -45,13 +45,13 @@ ol, ul {
 }
 .cd-horizontal-timeline .events-wrapper::before {
   left: 0;
-  background-color: #FFFFCC;
+  background-color:  #1F431F;
   /*background-image: -webkit-linear-gradient( left , #f8f8f8, rgba(248, 248, 248, 0));
   background-image: linear-gradient(to right, #f8f8f8, rgba(248, 248, 248, 0));*/
 }
 .cd-horizontal-timeline .events-wrapper::after {
   right: 0;
-  background-color: #FFFFCC;
+  background-color:  #1F431F;
   /*background-image: -webkit-linear-gradient( right , #f8f8f8, rgba(248, 248, 248, 0));
   background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));*/
 }
@@ -98,7 +98,7 @@ ol, ul {
   text-align: center;
   font-size: 1rem;
   padding-bottom: 15px;
-  color: #383838;
+  color: white;
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);

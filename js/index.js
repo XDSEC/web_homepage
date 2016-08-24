@@ -145,7 +145,7 @@ function members()
 	var e = new sHover("head","info");
 	e.set({
 	speed:7,
-	opacity:80,						
+	opacity:100,						
 	opacityChange:true
 	});
 }
@@ -168,7 +168,7 @@ $(document).ready(function ()
 	now_position = $(window).scrollTop();
 	scroll = 0;
 
-	//new_div();
+	//alert(navigator.userAgent);
 	list_guide_show();
 	click_jmp();
 	members();
