@@ -28,7 +28,7 @@ members_list=[
 {imgname:"sudalover.jpg",name:"Sud0", intro:"不懂算法的前端狗", blog:"http://blog.sudalover.com", blogname:"Sud0's Blog"},
 {imgname:"songfeng.jpg",name:"松风", intro:"游离在边缘的、未找到状态的学习者", blog:"", blogname:""},
 {imgname:"ulin.jpg",name:"Ulin", intro:"XDSEC打杂程序员", blog:"http://www.u1in.cn", blogname:"Ulin's Blog"},
-{imgname:"icemakr.jpg",name:"Icemakr", intro:"", blog:"http://0byjwzsf.me", blogname:"Icemakr's Blog"},
+{imgname:"icemakr.jpg",name:"Icemakr", intro:"感觉至上的梦想家", blog:"http://0byjwzsf.me", blogname:"Icemakr's Blog"},
 {imgname:"klaus.png",name:"Klaus", intro:"", blog:"http://blog.klaus.link/", blogname:""},
 {imgname:"drimtuer.jpg",name:"Drimtuer", intro:"二进制渣渣一只<br>拖延型强迫症", blog:"", blogname:""},
 {imgname:"iphan.jpg",name:"1Phan", intro:"", blog:"http://iphan.net", blogname:""},

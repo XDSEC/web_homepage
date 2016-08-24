@@ -1,10 +1,10 @@
 function click_jmp()
 {
-	$("#a_X").click(function (){screen('second');});
-	$("#a_D").click(function (){screen('third');});
-	$("#a_S").click(function (){screen('forth');});
-	$("#a_E").click(function (){screen('fifth');});
-	$("#a_C").click(function (){screen('sixth');});
+	$(".a_X").click(function (){screen('second');});
+	$(".a_D").click(function (){screen('third');});
+	$(".a_S").click(function (){screen('forth');});
+	$(".a_E").click(function (){screen('fifth');});
+	$(".a_C").click(function (){screen('sixth');});
 	$('#list_guide_x').click(function (){screen('second');});
 	$('#list_guide_d').click(function (){screen('third');});
 	$('#list_guide_s').click(function (){screen('forth');});
