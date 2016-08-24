@@ -352,6 +352,9 @@ width:45%;
 {
 	opacity: 0;
 }
+.new_show{
+cursor:default;
+}
 .new_we_show
 {
 	margin-left:5px;position:relative;top:20px;background: powderblue;
