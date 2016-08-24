@@ -303,12 +303,12 @@ width:45%;
 	margin-bottom: 15px;
 	margin-top: 15px;
 }
-.collection_name a{color:black;text-decoration:none;}
-.collection_name a:link{color:black;}
-.collection_name a:visited{color:black;}
-.collection_name a:hover{color:black;}
-.collection_name a:active{color:black;}
-.collection_name a:focus{color:black;} 
+.collections>a{color:black;text-decoration:none;}
+.collections>a:link{color:black;}
+.collections>a:visited{color:black;}
+.collections>a:hover{color:black;}
+.collections>a:active{color:black;}
+.collections>a:focus{color:black;} 
 
 .new
 {
