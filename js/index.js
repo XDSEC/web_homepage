@@ -149,6 +149,15 @@ function members()
 	opacityChange:true
 	});
 }
+function new_div()
+{
+	var n = new sHover("new","new_hover");
+	e.set({
+	speed:7,
+	opacity:80,						
+	opacityChange:true
+	});
+}
 var now_position;
 var last_position;
 var scroll;
@@ -159,6 +168,7 @@ $(document).ready(function ()
 	now_position = $(window).scrollTop();
 	scroll = 0;
 
+	//new_div();
 	list_guide_show();
 	click_jmp();
 	members();

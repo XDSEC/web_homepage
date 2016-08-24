@@ -305,10 +305,78 @@ width:45%;
 }
 .collection_name a{color:black;text-decoration:none;}
 .collection_name a:link{color:black;}
-.collection_name a:visited{	color:black;}
+.collection_name a:visited{color:black;}
 .collection_name a:hover{color:black;}
 .collection_name a:active{color:black;}
 .collection_name a:focus{color:black;} 
 
-
-
+.new
+{
+	width: 400px;
+	margin: 50px;
+	height: 100px;
+	background-color: powderblue;
+}
+.new_hover
+{
+	background-color: firebrick;
+}
+.new_button
+{
+	background:black;
+	background-size:100%;
+	position:absolute;
+	left:50px;
+	width:200px;
+	height:80px;
+	bottom:25px;
+	font-size:20px;
+	cursor: pointer;
+	-moz-transition: 1s; /* Firefox 4 */
+	-webkit-transition:1s; /* Safari 和 Chrome */
+	-o-transition:1s; /* Opera */
+}
+.new_button p
+{
+	text-align: center;
+	-moz-transition: 1s; /* Firefox 4 */
+	-webkit-transition:1s; /* Safari 和 Chrome */
+	-o-transition:1s; /* Opera */
+}
+.new_button:hover
+{
+	background:url('../img/qb.jpg');
+	background-size:100%;
+}
+.new_button:hover .new_button p
+{
+	opacity: 0;
+}
+.new_we_show
+{
+	margin-left:5px;position:relative;top:20px;background: powderblue;
+}
+.new_you_show
+{
+	margin-left:5px;position:relative;top:20px;
+}
+.new_we_show:hover .new_we_hidden
+{
+	display: inline-block;
+}
+.new_we_hidden
+{
+	position:absolute;background:black;height:80px;width:150px;top:20px;box-shadow:3px 3px 7px black;display:none;
+}
+.new_you_show
+{
+	margin-left:5px;position:relative;top:20px;background: firebrick;
+}
+.new_you_show:hover .new_you_hidden
+{
+	display: inline-block;
+}
+.new_you_hidden
+{
+	position:absolute;background:black;height:80px;width:150px;top:20px;box-shadow:3px 3px 7px black;display:none;
+}
