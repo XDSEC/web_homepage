@@ -393,7 +393,7 @@ width:45%;
 }
 .new_we_hidden
 {
-	position:absolute;background:black;height:80px;width:150px;top:20px;box-shadow:3px 3px 7px black;display:none;
+	position:absolute;background:black;height:80px;width:150px;top:20px;box-shadow:3px 3px 7px black;display:none;margin-top:10px;margin-left:-5px;
 }
 .new_you_show
 {
@@ -410,5 +410,5 @@ width:45%;
 }
 .new_you_hidden
 {
-	position:absolute;background:black;height:80px;width:150px;top:20px;box-shadow:3px 3px 7px black;display:none;
+	position:absolute;background:black;height:80px;width:150px;top:20px;box-shadow:3px 3px 7px black;display:none;margin-top:10px;margin-left:-5px;
 }
