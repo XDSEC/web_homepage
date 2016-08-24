@@ -12,9 +12,9 @@ members_list=[
 {imgname:"izy.jpg",name:"Izy", intro:"", blog:"http://1zy.pw", blogname:"Izy's Blog"},
 {imgname:"netfairy.jpg",name:"NetFairy", intro:"关注网络安全技术", blog:"http://www.netfairy.net", blogname:"Netfairy's Blog"},
 {imgname:"wilson.png",name:"Wilson", intro:"我的菜刀已经饥渴难耐了", blog:"http://blog.wils0n.cn/", blogname:"喂马，砍柴，周游世界"},
-{imgname:"W.jpg", type:"SPECIAL"},
+{imgname:"th1nk.jpg",name:"Th1nk", intro:"", blog:"", blogname:""},
 {imgname:"E.jpg", type:"SPECIAL"},
-{imgname:"th1nk.jpg",name:"Th1nk", intro:"", blog:"", blogname:""}, 
+{imgname:"E.jpg", type:"SPECIAL"}, 
 {imgname:"th1nk.jpg",name:"Th1nk", intro:"", blog:"", blogname:""}, 
 {imgname:"th1nk.jpg",name:"Th1nk", intro:"", blog:"", blogname:""}, 
 {imgname:"ashitaka.jpg",name:"Ashitaka", intro:"祖传IDA<br>专治F5", blog:"", blogname:"Blog"},
@@ -36,8 +36,8 @@ members_list=[
 {imgname:"halo.jpg",name:"Halo", intro:"我爱学习", blog:"http://firmianay.github.io/", blogname:""},
 {imgname:"liuil.jpg",name:"liuil", intro:"Stay hungry<br>Stay foolish", blog:"https://liuil.top", blogname:""},
 {imgname:"jianwutianxia.jpg",name:"剑舞天下", intro:"希望成为一个专注于硬件的软件工程师", blog:"http://wsdlhlc.blog.163.com/", blogname:""},
-{imgname:"Y.jpg", type:"SPECIAL"},
-{imgname:"O.jpg", type:"SPECIAL"},
+{imgname:"E.jpg", type:"SPECIAL"},
+{imgname:"E.jpg", type:"SPECIAL"},
 {imgname:"U.jpg", type:"SPECIAL"},
 ];
 domtempalte=$("#t_member")[0].innerHTML;
