@@ -1,3 +1,19 @@
+.mobl_hint{
+height:100%;
+width:100%;
+position:absolute;
+z-index:99;
+background:rgba(0,0,0,0.6);
+display:none;
+text-align:center;
+
+}
+
+@media (max-width:1200px) {.mobl_hint{
+display:flex;
+}
+}
+
 body{
 font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
 }
