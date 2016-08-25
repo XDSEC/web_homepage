@@ -65,7 +65,7 @@ function list_guide_toggle()
 		});
 		$('#list_guide_e').delay(500).css({
 			'bottom':'220px',
-			'opacity':'',
+			'opacity':'1',
 			'z-index':'100'
 		});
 		$('#list_guide_c').delay(500).css({
