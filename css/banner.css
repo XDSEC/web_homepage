@@ -12,7 +12,6 @@
   bottom:0;
   margin:auto;
   overflow: hidden;
-  background-color: #0daca8;
 }
 
 #slider img
@@ -43,7 +42,6 @@
   left: 0;
   right: 0;
   padding: 20px;
-  background-color: #0daca8;
 }
 
 .slideCopy p { font-size: 18px; }
