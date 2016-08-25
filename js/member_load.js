@@ -3,7 +3,7 @@ members_list=[
 {imgname:"le4f.jpg",name:"Le4F", intro:"冷夜", blog:"http://le4f.net", blogname:"SwordSoul"},
 {imgname:"phithon.jpg",name:"Phithon", intro:"帅气的文艺青年<br>喜欢一切关于代码的事物。", blog:"http://www.leavesongs.com", blogname:""},
 {imgname:"dm_.jpg",name:"DM_", intro:"think as a hacker", blog:"http://x0day.me", blogname:"DM_'s Blog"},
-{imgname:"victorv.jpg",name:"VictorV", intro:"虚拟机漏洞挖掘", blog:"v-v.mom", blogname:""}, 
+{imgname:"victorv.jpg",name:"VictorV", intro:"gdb的好基友，天天都来xpx", blog:"v-v.mom", blogname:""}, 
 {imgname:"hkhide.jpg",name:"HKHide", intro:"比较能吃<br>能睡<br>时而欢乐<br>时而深沉", blog:"", blogname:""},
 {imgname:"ulin.jpg",name:"Ulin", intro:"XDSEC打杂程序员", blog:"http://www.u1in.cn", blogname:"Ulin's Blog"},
 {imgname:"d_m.jpg",name:"D_M", intro:"派大星，陪我去抓水母吧？", blog:"http://lidawei.me/", blogname:"断电的小晓城"},
