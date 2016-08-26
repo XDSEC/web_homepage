@@ -180,6 +180,6 @@ $(document).ready(function ()
 		screen_lock(5);
 	});
 	
-	console.log("Have you found me? Submit flag to admin in the QQ group: xd53c{1nd3x_Is_saiGao}. Wait for more interestring things later.");
+	console.log("Have you found me? Submit flag to admin in the QQ group or fill it in the hire table: xd53c{1nd3x_Is_saiGao}. Wait for more interestring things at *.*.141.85 later.");
 
 });
