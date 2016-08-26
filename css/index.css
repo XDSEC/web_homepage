@@ -1,0 +1,452 @@
+.mobl_hint{
+height:100%;
+width:100%;
+position:absolute;
+z-index:99;
+background:rgba(0,0,0,0.6);
+display:none;
+text-align:center;
+
+}
+
+@media (max-width:1200px) {.mobl_hint{
+display:flex;
+}
+}
+
+body{
+font-family:"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+}
+@font-face
+{
+	font-family: Myriad;
+	src:url("../fonts/MyriadSetPro-ExtraThin.otf");
+}
+h1,h2,h3,h4,p,em,li
+{
+	color: black;
+}
+.screen
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+/*导航屏CSS*/
+.alphabet_background
+{
+	position: absolute;
+	height: 100%;
+	width: 20%;
+	top:0%;
+	opacity: 0.5;
+	z-index: 1;
+	transition: 1s;
+	-moz-transition: 1s; /* Firefox 4 */
+	-webkit-transition:1s; /* Safari 和 Chrome */
+	-o-transition:1s; /* Opera */
+}
+.alphabet_font
+{
+	position:absolute;
+	top:40%;
+	font-size: 1100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*display:block;
+	transform:scale(10,11);*/
+}
+.alphabet_font a p
+{
+	cursor: pointer;
+	font-family: Myriad;
+	text-align:center;
+	margin:0%;
+	opacity: 1;
+	color: black;
+}
+.alphabet_font a{color:black;text-decoration:none;}
+.alphabet_font a:link{color:black;}
+.alphabet_font a:visited{color:black;}
+.alphabet_font a:hover{	color:black;}
+.alphabet_font a:active{	color:black;}
+.alphabet_font a:focus{color:black;}
+.guide	
+{
+	position: absolute;
+	bottom: 0%;
+	background-color: black;
+	height: 0%;
+	width: 20%;
+	opacity: 0;
+	transition: 1s;
+	-moz-transition: 1s; /* Firefox 4 */
+	-webkit-transition:1s; /* Safari 和 Chrome */
+	-o-transition:1s; /* Opera */
+}
+.guide a p
+{
+	cursor: pointer;
+	text-align:center;
+	padding-top:10%;
+	font-size:100%;
+	color: white;
+	opacity: 1;
+}
+.show
+{
+	height: 100%;
+	width: 20%;
+	border: none;
+}
+.show:hover .alphabet_background
+{
+	height: 80%;
+}
+.show:hover .guide
+{
+	height: 20%;
+	opacity: 0.5;
+}
+.guide a{color:black;text-decoration:none;}
+.guide a:link{color:black;}
+.guide a:visited{	color:black;}
+.guide a:hover{color:black;}
+.guide a:active{color:black;}
+.guide a:focus{color:black;} 
+
+/*协会介绍CSS*/
+#secondscreen
+{
+	top: 100%;
+	background-color: #ececec;
+}
+.xdsec_intro{
+position:absolute;
+height:100%;
+width:45%;
+}
+.xdsec_slide{
+	position:absolute;
+	left:45%;
+	height:100%;
+	width:55%;
+}
+.xdsec_information_title
+{
+	position:absolute;
+	top:10%;
+	left: 0%;
+	background-color:#6CA4DB;
+	height:19%;
+	padding:0 2%;
+}
+.xdsec_information_content
+{
+	position:absolute;
+	padding:2%;
+	text-align:left;
+	height:60%;
+	top:30%;
+	opacity: 1;
+	z-index: 2;
+	overflow:auto;
+	margin-left:2%;
+	line-height:1.5em;
+	font-size:1.2em;
+}
+.xdsec_information_content p
+{
+color:#000;
+}
+.xdsec_information_content::first-letter
+{
+	font-size: 200%;
+}
+/*分组介绍CSS*/
+.screen_group{
+	top:200%;
+	display:inline-flex;
+	background:url('../img/intro_bg.png');
+	background-repeat:no-repeat;
+    background-position-x: left;
+	background-size:30%;
+    background-position-y: bottom;
+}
+.screen_group_container{
+	display:flex;
+	flex-wrap:nowrap;
+	align-items:center;
+	flex-direction:column;
+   	justify-content: center;
+	height:80%;
+	width:85%;
+	margin:auto;
+}
+.group_line{
+	display:flex;
+	width:100%;
+	height:100%;
+}
+.group
+{
+	width:33%;
+	margin:auto 20px;
+	display:flex;
+	padding:10px;
+	background:rgba(255,255,255,0.4);
+	box-shadow:0 0 15px 3px rgba(255,255,255,0.4);
+	box-shadow:0 0 20px 2px rgba(0,0,0,0.4);
+}
+.group_head{
+	height:100%;
+	float:left;
+	text-align:center;
+}
+.group_head>h4, .group_head>h3{
+	color: black;
+}
+.group_text p
+{
+	color: black;
+}
+.group_icon{
+	width:100px;
+	height:100px;
+	border-radius:50px;
+}
+.group_text{
+	margin-left:15px;
+	line-height:1.5em;
+}
+
+#thirdscreen{
+background-image:linear-gradient(180deg,white,rgb(250,250,255),rgba(79, 135, 205,0.8));
+}
+
+/*导航按钮CSS*/
+.list_guide
+{
+	position: fixed;
+	right: 5%;
+	bottom: 100px;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	cursor: pointer;
+	z-index: -1;
+	opacity: 0;
+	background-size: 100%;
+	transition: 0.2s;
+	-moz-transition: 0.2s; /* Firefox 4 */
+	-webkit-transition:0.2s; /* Safari 和 Chrome */
+	-o-transition:0.2s; /* Opera */
+}
+/*协会成员CSS*/
+#forthscreen{
+	background:url('../img/member_bg.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#member_background{
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+	margin:auto;
+	height:480px;
+	width:1100px;
+	position:absolute;
+}
+.head
+{
+	width:110px;
+	height:110px;
+	float: left;
+	background-size:cover !important;
+}
+.info
+{
+	background: #6CA4DB;
+	margin:0px;
+}
+.info h4
+{
+	text-align:center;
+	margin:0px;
+	margin-top:3px;
+	color:white;
+}
+.info p
+{
+	color: white;
+	text-align:center;
+	margin:5px;
+	margin-top:3px;
+	font-size:12px;
+}
+.member_button
+{
+	position:absolute;
+	background:firebrick;
+	left:30px;
+	text-align:center;
+	bottom:10px;
+	width:60px;
+	height:20px;
+	border:none;
+	border-radius:4px;
+	text-decoration:none;
+	font-size:14px;
+}
+
+.member_button:link,.member_button:visited,.member_button:hover,.member_button:active {
+	color:#ffffff
+}
+
+
+/*各类入口CSS*/
+.collections
+{
+	width:200px;
+	height:250px;
+	margin:25px;
+	float:left;
+}
+#collections_background
+{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 300px;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.collection_icon
+{
+	position:absolute;
+	width:200px;
+	height:200px;
+	background-size:100%;
+}
+.collection_name
+{
+	position:absolute;
+	width:200px;
+	height:50px;
+	background:#99CCCC;
+	bottom:25px;
+}
+.collection_name h4
+{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.collections>a{color:black;text-decoration:none;}
+.collections>a:link{color:black;}
+.collections>a:visited{color:black;}
+.collections>a:hover{color:black;}
+.collections>a:active{color:black;}
+.collections>a:focus{color:black;} 
+
+.new
+{
+	width: 400px;
+	margin: 50px;
+	height: 100px;
+	background-color: #64ABED;
+}
+.new_button
+{
+	background:url('../img/qb.jpg');
+	background-size:100%;
+	position:absolute;
+	left:50px;
+	width:200px;
+	height:80px;
+	bottom:1.5rem;
+	font-size:18px;
+	cursor: pointer;
+	display:flex;
+}
+.new_button div
+{
+	background:rgba(0,0,0,0.7);
+	top:0;
+	width:100%;
+	height:100%;
+	text-align: center;
+	-moz-transition: 1s; /* Firefox 4 */
+	-webkit-transition:1s; /* Safari 和 Chrome */
+	-o-transition:1s; /* Opera */
+}
+.new_button:hover div
+{
+	opacity: 0.5;
+}
+
+.new_show
+{
+	margin:5px;
+	cursor: pointer;
+	-moz-transition: 0.2s; /* Firefox 4 */
+	-webkit-transition:0.2s; /* Safari 和 Chrome */
+	-o-transition:0.2s; /* Opera */
+	padding:0.5em 2em;
+}
+
+.new_hidden{
+	color:white;
+	position:absolute;
+	background:black;
+	width:150px;
+	z-index:1;
+	box-shadow:3px 3px 7px black;
+	display:none;
+	margin-top:10px;
+	margin-left:-5px;
+	padding:0.2em 0.7em;
+}
+
+.new_we_show
+{
+	background:  #6CA4DB;
+}
+.new_you_show
+{
+}
+.new_we_show:hover
+{
+	top:17px;
+	box-shadow: 3px 3px 5px black;
+}
+.new_we_show:hover .new_we_hidden
+{
+	display: inline-block;
+}
+.new_we_hidden
+{
+}
+.new_you_show
+{
+	background: #A45B5C;
+}
+.new_you_show:hover
+{
+	top:17px;
+	box-shadow: 3px 3px 5px black;
+}
+.new_you_show:hover .new_you_hidden
+{
+	display: inline-block;
+}
+.new_you_hidden
+{
+}
