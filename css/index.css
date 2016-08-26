@@ -168,7 +168,6 @@ color:#000;
 .screen_group{
 	top:200%;
 	display:inline-flex;
-	background:url('../img/intro_bg.png');
 	background-repeat:no-repeat;
     background-position-x: left;
 	background-size:30%;
