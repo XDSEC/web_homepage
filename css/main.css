@@ -1,185 +1,165 @@
-::selection {
-background:red;
-color:#eee;
+/* -----------  ALL SETTING ----------------*/
+@font-face {
+    font-family: "xdsec_ch";
+    src: url('../fonts/LanTing.ttf');
 }
-::-moz-selection {
-background:red;
-color:#eee;
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
-::-webkit-selection {
-background:red;
-color:#eee;
+h1,h2,h3,h4,h5,h6,p,li,footer {
+    font-family: "xdsec_ch";
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
-.class-timeline {
-	height: 700px;
+hr {
+    border: #000000 solid 1px;
 }
-.class-footer {
-	height: 200px;
-	background-color: #F3ACAC;
-	padding-top: 50px;
-	font-size: 16px;
-	cursor: default;
-	transition: background 0.5s;
-	-moz-transition: background 0.5s;	/* Firefox 4 */
-	-webkit-transition: background 0.5s;	/* Safari 和 Chrome */
-	-o-transition: background 0.5s;	/* Opera */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.class-footer:hover {
-	background-color: #E27878;
+.box {
+    display: flex;
+    width: 1000px;
+    height: 100%;
+    flex-wrap: wrap;
 }
-.class-footer:hover a{
-	text-decoration: none;
-	cursor: pointer;
+.angle {
+    display: none;
 }
-.class-footer a{
-	color: #333;
-	border-bottom: 1px dashed #333;
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+    color: #000000;
 }
-.class-footer a:hover {
-	color: red;
+/* -----------  LEFT SETTING ----------------*/
+.left {
+    width: 100px;
+    height: auto;
+    background-color: #FFFFFF;
 }
-#nav {
-	position:relative;
-	top:0;
-	width: 100%;
+.left > ul {
+    list-style: none;
+    margin: 100px 0 0 0;
+    padding: 0 0 0 0;
 }
-#id-header {
-	height: 630px;
-	background-color: #242424;
+.left > ul > a > li {
+    font-size: 1.3em;
+    display: block;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    margin-top: 20px;
+    text-align: center;
 }
-.back-logo {
-	height: 630px;
-	background-image: url(../img/bg.png);
-	background-position: center;
-	background-repeat: repeat-y;
+@media screen and (min-device-width: 451px) {
+    .left > ul > a > li:hover {
+        background-color: #DD0000;
+        color: white;
+    }
 }
-#id-logo {
-	padding-top: 100px;
-	display: none;
+/* -----------  RIGHT SETTING ----------------*/
+.right {
+    flex: 1;
+    height: auto;
+    padding: 20px;
 }
-.header-xdintro {
-	display: none;
-
-	color: #EEE;
+.right img {
+    height: 80px;
+    float: left;
 }
-blockquote p {
-	font-size: 15px;
+/* -----------  INDEX CSS ----------------*/
+#index > ul > h1 {
+    font-size: 1.5em;
+    line-height: 40px;
+    padding: 10px;
 }
-.header-xdbq {
-	margin-top: 20px;
-	margin-left: 30%;
-	margin-right: 25%;
+#index > ul > li {
+    font-size: 1.2em;
 }
-.nav-xdmenu {
-
+#index > ul > p{
+    font-size: 1em;
+    padding: 10px;
 }
-.nav-xdmenu li:hover {
-	background-color: #080808;
+#index > ul > li {
+    color: #DD0000;
+    padding: 10px;
 }
-.navblock {
-	height: 50px;
+#index > ul > h1 > img {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
-#member {
-	height: 800px;
-	background-color: #F2F2F2;
-
+/* -----------  DIRECT CSS ----------------*/
+#Direct > ul {
+    list-style: none;
 }
-.memone {
-	height: 30px;
-	width: 100px;
-	background-color: #E9C8C8;
-	line-height: 30px;
-	font-size: 16px;
-	padding: 0 7px;
-	margin: 0 1px 1px 80px;
-	cursor: pointer;
-	z-index: 500;
-	transition: background 0.2s;
-	-moz-transition: background 0.2s;	/* Firefox 4 */
-	-webkit-transition: background 0.2s;	/* Safari 和 Chrome */
-	-o-transition: background 0.2s;	/* Opera */
+#Direct > ul > h3 {
+    font-size: 1.3em;
 }
-.memone:hover {
-	background-color: #E68E8E;
+#Direct > ul > p{
+    font-size: 1em;
 }
-.memone .meminfo {
-	line-height: 16px;
-	font-size: 13px;
-	display: none;
-	position: relative;
-	left: -10px;
-	width: 200px;
-	background-color: #fff;
+#Direct > ul > i {
+    border: #DD0000 solid 2px;
+    color: #DD0000;
 }
-/*.memone.onleft .meminfo {
-	left: -105px;
+#Direct > ul > hr {
+    border: #000000 solid 1px;
 }
-.memone.onright .meminfo {
-	right: -103px;
-}*/
-.infolist .list-group-item {
-	padding: 5px 0px;
-	background-color: #f2f2f2;
-	cursor: pointer;
-	transition: background 0.4s;
-	-moz-transition: background 0.4s;	/* Firefox 4 */
-	-webkit-transition: background 0.4s;	/* Safari 和 Chrome */
-	-o-transition: background 0.4s;	/* Opera */
+/* -----------  MEMBER CSS ----------------*/
+#Member {
+    padding-left: 40px; 
 }
-.infolist a {
-	text-decoration: none;
-	color: #111;
+#Member > .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 30px;
 }
-.infolist .list-group-item:hover {
-	background-color: #fff;
-/*	position: relative;
-	top: -2px;
-	left: -2px;
-	height: 32px;
-	width: 202px;
-	border: 1px solid #ddd;*/
+#Member > h1 {
+    font-size: 1.5em;
 }
-#totop{
-	z-index: 1001;
-	display:none;
-	position:fixed;
-	bottom:80px;
-	width:40px;
-	line-height:40px;
-	background:#CCC;
-	color:#FFF;
-	text-align:center;
-	cursor:pointer;
-	transition: background 0.5s;
-	-moz-transition: background 0.5s;	/* Firefox 4 */
-	-webkit-transition: background 0.5s;	/* Safari 和 Chrome */
-	-o-transition: background 0.5s;	/* Opera */
+#Member > .list > ul > li {
+    font-size: 1.2em;
+    margin: 5px;
 }
-#totop:hover{
-	background:#2cb4bf
+#Member > .list > ul > li:hover {
+    color: #DD0000;
 }
-.a-timeline {
-	position: relative;
-	top: -20px;
+#Member > .list > ul > li:hover > a {
+    color: #DD0000;
 }
-.a-member {
-	position: relative;
-	top: -50px;
+/* -----------  NOTICE CSS ----------------*/
+#Notice > ul > h1,
+#Notice > ul > p {
+    margin: 20px;
 }
-#onload {
-	display: block;
-	background-color: #000;
-	width: 100%;
-	height: 5000px;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 2000;
-	color: #fff;
-	padding-top: 300px;
-	font-size: 20px;
+#Notice > ul > h1 {
+    font-size: 1.5em;
 }
-.topdiv {
-	margin-top: 10px;
+#Notice > ul > p {
+    font-size: 1em;
+}
+#Notice > ul > hr {
+    border: #DD0000 solid 1px;
+}
+#Notice > ul > p > strong > a {
+    text-decoration: underline;
+}
+/* -----------  FOOT CSS ----------------*/
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+footer > img {
+    vertical-align: middle;
 }
