@@ -114,9 +114,6 @@ a:active{
     border: #000000 solid 1px;
 }
 /* -----------  MEMBER CSS ----------------*/
-#Member {
-    padding-left: 40px; 
-}
 #Member > .list {
     display: flex;
     align-items: flex-start;
