@@ -124,6 +124,9 @@ a:active{
 #Member > h1 {
     font-size: 1.5em;
 }
+.list > ul {
+    width: 28%;
+}
 #Member > .list > ul > li {
     font-size: 1.2em;
     margin: 5px;
