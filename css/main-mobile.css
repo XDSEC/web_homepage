@@ -52,3 +52,11 @@
     font-size: 1em;
     line-height: 1.3em;
 }
+.list > ul {
+    width: 100%;
+    padding-left: 0;
+}
+.right > ul {
+    padding-left: 0;
+    list-style: none;
+}
