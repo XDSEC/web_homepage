@@ -1,165 +1,126 @@
-/* -----------  ALL SETTING ----------------*/
-@font-face {
-    font-family: "xdsec_ch";
-    src: url('../fonts/LanTing.ttf');
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
 }
-html,body {
-    height: 100%;
+body {
+    padding-bottom: 60px;
+}
+.logo-box {
+    height: 300px;
     width: 100%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-h1,h2,h3,h4,h5,h6,p,li,footer {
-    font-family: "xdsec_ch";
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-hr {
-    border: #000000 solid 1px;
-}
-.container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-.box {
+
+.logo-box > img {
+    height: auto;
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.logo-link {
+    max-width: 500px;
+    width: 100%;
     display: flex;
-    width: 1000px;
-    height: 100%;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
-.angle {
-    display: none;
+
+.logo-link a {
+    display: inline-block;
+    margin: 0 10px;
 }
-a:link,
-a:visited,
-a:hover,
-a:active{
+
+.logo-link a.active {
+    color: #D82727 !important;
+}
+
+.logo-link a:link,
+.logo-link a:visited,
+.logo-link a:hover,
+.logo-link a:active {
     text-decoration: none;
-    color: #000000;
+    color: black;
 }
-/* -----------  LEFT SETTING ----------------*/
-.left {
-    width: 100px;
+
+.main-box {
     height: auto;
-    background-color: #FFFFFF;
-}
-.left > ul {
-    list-style: none;
-    margin: 100px 0 0 0;
-    padding: 0 0 0 0;
-}
-.left > ul > a > li {
-    font-size: 1.3em;
-    display: block;
-    height: 50px;
     width: 100%;
-    line-height: 50px;
-    margin-top: 20px;
-    text-align: center;
-}
-@media screen and (min-device-width: 451px) {
-    .left > ul > a > li:hover {
-        background-color: #DD0000;
-        color: white;
-    }
-}
-/* -----------  RIGHT SETTING ----------------*/
-.right {
-    flex: 1;
-    height: auto;
-    padding: 20px;
-}
-.right img {
-    height: 80px;
-    float: left;
-}
-/* -----------  INDEX CSS ----------------*/
-#index > ul > h1 {
-    font-size: 1.5em;
-    line-height: 40px;
-    padding: 10px;
-}
-#index > ul > li {
-    font-size: 1.2em;
-}
-#index > ul > p{
-    font-size: 1em;
-    padding: 10px;
-}
-#index > ul > li {
-    color: #DD0000;
-    padding: 10px;
-}
-#index > ul > h1 > img {
-    height: 40px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-/* -----------  DIRECT CSS ----------------*/
-#Direct > ul {
-    list-style: none;
-}
-#Direct > ul > h3 {
-    font-size: 1.3em;
-}
-#Direct > ul > p{
-    font-size: 1em;
-}
-#Direct > ul > i {
-    border: #DD0000 solid 2px;
-    color: #DD0000;
-}
-#Direct > ul > hr {
-    border: #000000 solid 1px;
-}
-/* -----------  MEMBER CSS ----------------*/
-#Member > .list {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0px 30px;
+    justify-content: center;
+    align-items: center;
 }
-#Member > h1 {
-    font-size: 1.5em;
-}
-.list > ul {
-    width: 28%;
-}
-#Member > .list > ul > li {
-    font-size: 1.2em;
-    margin: 5px;
-}
-#Member > .list > ul > li:hover {
-    color: #DD0000;
-}
-#Member > .list > ul > li:hover > a {
-    color: #DD0000;
-}
-/* -----------  NOTICE CSS ----------------*/
-#Notice > ul > h1,
-#Notice > ul > p {
-    margin: 20px;
-}
-#Notice > ul > h1 {
-    font-size: 1.5em;
-}
-#Notice > ul > p {
-    font-size: 1em;
-}
-#Notice > ul > hr {
-    border: #DD0000 solid 1px;
-}
-#Notice > ul > p > strong > a {
-    text-decoration: underline;
-}
-/* -----------  FOOT CSS ----------------*/
-footer {
+
+.main {
+    max-width: 600px;
     width: 100%;
-    padding: 20px;
-    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
 }
-footer > img {
-    vertical-align: middle;
+
+.main p {
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.title,
+.notice-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.intro-title {
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+.intro-title img {
+    height: 30px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.notice-title {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.member-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.member-list > div {
+    margin: 10px;
+}
+
+.footer {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: white;
+}
+
+.footer img {
+    height: 100%;
+    width: auto;
 }

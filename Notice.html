@@ -1,83 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>XDSEC 西安电子科技大学信息安全协会</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <link href="imgs/logo-mini.png" rel="icon" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 450px)" href="css/main-mobile.css">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-        <meta name="keywords" Content="XDSEC,Lteam,LTEAM,CTF">
-        <meta name="description" Content="“西电信息安全协会”(XDSEC)是由08,09级学长自发组建的学生组织，面向全校各年级同学，期间多次与学校合作，自行管理和发展至今。">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="full-screen" content="yes">
-        <meta name="browsermode" content="application">
-        <meta name="x5-orientation" content="portrait">
-        <meta name="x5-fullscreen" content="true">
-        <meta name="x5-page-mode" content="app">
-    </head>
-    <body>
-        <div class="container">
-            <div class="box" id="box">
-                <div class="angle" onclick="menuToggle()"><span><i class="fa fa-angle-down"></i></span></div>
-                <div class="left" id="mobile-menu">
-                    <ul>
-                        <a class="angle" onclick="menuToggle()"><li><i class="fa fa-angle-up"></i></li></a>
-                        <a href="./index.html" class="active"><li>协会介绍</li></a>
-                        <a href="./Direct.html"><li>方向分支</li></a>
-                        <a href="./Notice.html"><li>协会活动</li></a>
-                        <a href="#"><li>文章列表</li></a>
-                        <a href="./Member.html"><li>历届成员</li></a>
-                    </ul>
-                </div>
+<html lang="en">
 
-                <div class="right" id="Notice">
-                    <ul>
-                        <h1>加入我们</h1>
-                        <hr>
-                        <p>XDSEC是一直致力于信息安全技术的研究和宣传普及, 下设秘书部, 技术部, 活动部, 宣传部, 运维部等五个部门, 各有分工.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XDSEC西安电子科技大学信息安全协会</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
 
-                        <p><strong>秘书处</strong>是会长与各部门联系的纽带，承担着管理协会各种内部核心事务的任务，主要负责组织召开各类内部会议并做好会议记录，管理协会各项资金及档 案，管理协会成员，处理入离会申请，协调组织协会各部门事务。</p>
-                        
-                        <p><strong>技术部</strong>主要负责协会内部技术发展，提高协会技术水平，为协会内部技术研究、成员学习提供良好的环境和氛围。</p>
-                        
-                        <p><strong>活动部</strong>主要负责策划与执行协会内外各类活动。</p>
-                        
-                        <p><strong>宣传部</strong>主要负责协会各对外宣传平台的日常运营维护，及协会所需影响资料的记录和处理制作。</p>
-                        
-                        <p><strong>运维部</strong>主要负责协会硬件资源和各类系统的日常维护，并提供运维支持。</p>
-                        
-                        <p><strong>西电本科在读1~3年级学生, 都可写信到<a
-                                href="mailto:apply@xdsec.club">&lt;apply@xdsec.club&gt;</a>报名加入.(信中一定要带有姓名, 性别, 学院, 学号, 邮箱(非qq/foxmail), 电话和意向部门.)</strong></p>
-                        <p><strong>注: 此招新活动为长期招新, 参与每年的秋季招新的新生无需写信, 只需参加开学初期的招新活动即可.</strong></p> 
-                        <p>XDSEC期待遇到不平凡的你.</p>
-                        
-                        <h1>2017萌新CTF</h1>
-                        <hr>
-                        <p>(已结束)</p>   
-                        <p>比赛地址: <a href="http://moectf.xdsec.club"
-                            target="_blank" style="text-decoration:underline;">http://moectf.xdsec.club</a></p>
-                        <p>想通过秋季统一招新加入技术部的萌新看过来啦~
-                        如果你是初入安全的小白, 那么可以在开学前学习基础知识,通过CTF
-                        带你进入安全世界的大门; 如果你接触过安全已是老司机, 那个可以通过这个平台向我们证明你的实力~</p>
-                        <p>优异的成绩据说可以在技术部的面试中加分呢~
-                        XDSEC期待着不平凡的你!</p>
-                        
-                        <h1>2017秋季招新</h1>
-                        <hr>
-                        <p>(已结束)</p>
-                        <p>西电2017级入学新生均可加入
-                         招新群: <strong>470948488</strong></p>
-                        
-                    </ul>
-                </div>
-                
-                <footer><img src="imgs/logo-mini.png" height="40px"> 2018©XDSEC</footer>     
-                
-                
-            </div>
+<body>
+    <div class="logo-box">
+        <img src="./images/logo.png" alt="xdsec">
+        <div class="logo-link">
+            <a href="index.html">协会介绍</a>
+            <span class="line">/</span>
+            <a href="intro.html">方向分支</a>
+            <span class="line">/</span>
+            <a href="notice.html" class="active">协会活动</a>
+            <span class="line">/</span>
+            <a href="member.html">历届成员</a>
         </div>
-    <script type="application/javascript" src="js/menu.js"></script>
-    </body>
+    </div>
+    <div class="main-box">
+        <div class="main">
+            <span class="notice-title">加入我萌</span>
+            <p>
+                XDSEC是一直致力于信息安全技术的研究和宣传普及, 下设秘书部, 技术部, 活动部, 宣传部, 运维部等五个部门, 各有分工.
+                <br>
+                <br>
+                秘书处是会长与各部门联系的纽带，承担着管理协会各种内部核心事务的任务，主要负责组织召开各类内部会议并做好会议记录，管理协会各项资金及档 案，管理协会成员，处理入离会申请，协调组织协会各部门事务。
+                <br>
+                <br>
+                技术部主要负责协会内部技术发展，提高协会技术水平，为协会内部技术研究、成员学习提供良好的环境和氛围。
+                <br>
+                <br>
+                活动部主要负责策划与执行协会内外各类活动。
+                <br>
+                <br>
+                宣传部主要负责协会各对外宣传平台的日常运营维护，及协会所需影响资料的记录和处理制作。
+                <br>
+                <br>
+                运维部主要负责协会硬件资源和各类系统的日常维护，并提供运维支持。
+                <br>
+                <br>
+                西电本科在读1~3年级学生, 都可写信到<apply@xdsec.club>报名加入.(信中一定要带有姓名, 性别, 学院, 学号, 邮箱(非qq/foxmail), 电话和意向部门.)
+                <br>
+                <br>
+                注: 此招新活动为长期招新, 参与每年的秋季招新的新生无需写信, 只需参加开学初期的招新活动即可.
+                <br>
+                <br>
+                XDSEC期待遇到不平凡的你.
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="./images/logo-mini.png" alt="logo">
+    </div>
+</body>
+
 </html>
