@@ -8,6 +8,15 @@ html, body {
 body {
     padding-bottom: 60px;
 }
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: black;
+}
+
 .logo-box {
     height: 300px;
     width: 100%;
@@ -92,7 +101,6 @@ body {
 }
 
 .notice-title {
-    border: 2px solid black;
     padding: 5px;
 }
 
