@@ -29,7 +29,7 @@ a:active {
 .logo-box > img {
     height: auto;
     max-width: 300px;
-    width: 100%;
+/*     width: 100%; */
     margin-bottom: 50px;
 }
 
